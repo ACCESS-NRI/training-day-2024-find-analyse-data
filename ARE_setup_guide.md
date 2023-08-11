@@ -2,8 +2,10 @@
 <p>Quick-start guide to setting up a JupyterLab session using the Australian Research Environment to run the ACCESS-NRI workshop exercises.</p>
 
 ## Step 0: Pre-workshop
-In order to get the full benefit of the workshop tutorials, access to specific project data on Gadi is required. To help things run as smoothly as possible on the day, please visit the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/) and join the following projects:
+- *0.1* In order to get the full benefit of the workshop tutorials, access to specific project data on Gadi is required. To help things run as smoothly as possible on the day, please visit the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/) and join the following projects:
 `nf33`, `xp65`, `dk92`, `fs38`, `p73`, `hh5` and `oi10` **prior** to the day of the workshop.
+
+- *0.2* Clone the workshop tutorials of interest found in the [NRI-Workshop2023-MED repo](https://github.com/ACCESS-NRI/NRI-Workshop2023-MED/tree/main) to an accessible location on Gadi.
 
 ## Step 1:
 Go to the [Australian Research Environment](https://are-auth.nci.org.au/) website and login with your **NCI username and password**. If you don't have an NCI account, you can sign up for one at the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/).
@@ -55,3 +57,14 @@ You will now presented with the main JupyterLab instance configuration form. Ple
 <p align="center"><img src="assets/ARE_setup_guide/setup_image12.png" alt="drawing" width="50%"/></p>
 
 - *3.7* Click `Launch` to start your JupyterLab instance.
+
+## Step 4:
+Once you have clicked `Launch` the browser will redirect to the 'interactive sessions' page where you will see your JupyterLab instance details and current status which will look something like this:
+
+<p align="center"><img src="assets/ARE_setup_guide/setup_image13.png" alt="drawing" width="50%"/></p>
+
+Once the JupyterLab instance has started (this usually takes around 30 seconds) and this status window should update and look something like the following, reporting that the instance has started and the time remaining. More detailed information on the instance can be accessed by clicking the `Session ID` link.
+
+<p align="center"><img src="assets/ARE_setup_guide/setup_image14.png" alt="drawing" width="50%"/></p>
+
+All that remains to get started is to click `Open JupyterLab`. This opens the instance a new browser window where you can navigate to the location of the cloned tutorial files.
