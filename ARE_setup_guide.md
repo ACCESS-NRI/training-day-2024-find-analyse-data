@@ -51,7 +51,7 @@ You will now presented with the main JupyterLab instance configuration form. Ple
 <p align="center"><img src="assets/ARE_setup_guide/setup_image10.png" alt="drawing" width="50%"/></p>
 <p align="center"><img src="assets/ARE_setup_guide/setup_image11.png" alt="drawing" width="50%"/></p>
 
-- *3.6.2* If you are instructed to use `xp65`, please enter `/g/data/xp65/public/modules` into the **Module directories** field and `conda/med ` into the **Modules** field to use the [ACCESS-NRI MED conda environment](https://github.com/ACCESS-NRI/MED-condaenv).
+- *3.6.2* If you are instructed to use `xp65`, please enter `/g/data/xp65/public/modules` into the **Module directories** field and `conda/access-med` into the **Modules** field to use the [ACCESS-NRI MED conda environment](https://github.com/ACCESS-NRI/MED-condaenv).
 <br></br>
 
 <p align="center"><img src="assets/ARE_setup_guide/setup_image12.png" alt="drawing" width="50%"/></p>
