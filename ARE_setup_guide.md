@@ -46,7 +46,7 @@ You will now presented with the main JupyterLab instance configuration form. Ple
 <p align="center"><img src="assets/ARE_setup_guide/setup_image8.png" alt="drawing" width="50%"/></p>
 <p align="center"><img src="assets/ARE_setup_guide/setup_image9.png" alt="drawing" width="50%"/></p>
 
-- *3.6.1* If you are instructed to use `hh5`, please enter `/g/data/hh5/public/modules` into the **Module directories** field and `conda/analysis3` into the **Modules** field to use the [hh5 conda environment](https://climate-cms.org/posts/2023-02-27-introducing-new-conda.html).
+- *3.6.1* If you are instructed to use `hh5`, please enter `/g/data/hh5/public/modules` into the **Module directories** field and `conda/analysis3-unstable` into the **Modules** field to use the [hh5 conda environment](https://climate-cms.org/posts/2023-02-27-introducing-new-conda.html).
 
 <p align="center"><img src="assets/ARE_setup_guide/setup_image10.png" alt="drawing" width="50%"/></p>
 <p align="center"><img src="assets/ARE_setup_guide/setup_image11.png" alt="drawing" width="50%"/></p>
