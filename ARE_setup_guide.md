@@ -18,7 +18,7 @@ Click on `JupyterLab` under *Featured Apps* to configure a new JupyterLab instan
 <p align="center"><img src="assets/ARE_setup_guide/setup_image2.png" alt="drawing" width="50%"/></p>
 
 ## Step 3:
-You will now presented with the main JupyterLab instance configuration form. Please complete **only** the fields below - leave all other fields blank or to their default values.
+You will now be presented with the main JupyterLab instance configuration form. Please complete **only** the fields below - leave all other fields blank or to their default values.
 
 <p align="center"><img src="assets/ARE_setup_guide/setup_image3.png" alt="drawing" width="50%"/></p>
 
