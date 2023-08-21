@@ -2,7 +2,7 @@
 
 #PBS -N workshop
 #PBS -l wd
-#PBS -P iq82
+#PBS -P nf33
 #PBS -q express
 #PBS -l walltime=0:20:00  
 #PBS -l ncpus=14
