@@ -20,7 +20,7 @@ module load conda
 
 export ILAMB_ROOT_PARENT=/g/data/nf33/public/data/ILAMB
 export ILAMB_ROOT=$ILAMB_ROOT_PARENT/ILAMB_ROOT
-export CARTOPY_DATA_DIR=../
+export CARTOPY_DATA_DIR=/g/data/xp65/public/apps/cartopy-data
 export BUILD_DIR=./ilamb_result/_build
 
 rm -rf $BUILD_DIR
