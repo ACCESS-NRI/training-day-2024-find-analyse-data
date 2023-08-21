@@ -24,14 +24,14 @@
 
 # Destination directory where all output will be written
 # Includes log files and performance stats.
-output_dir: /scratch/nf33/${USER}/esmvaltool_output
+output_dir: esmvaltool_output
 
 # Directory for storing downloaded climate data
-download_dir: /scratch/nf33/${USER}/esmvaltool_climate_data
+download_dir: esmvaltool_climate_data
 
 # Auxiliary data directory
 # Used by some recipes to look for additional datasets.
-auxiliary_data_dir: /scratch/nf33/${USER}/auxiliary_data
+auxiliary_data_dir: auxiliary_data
 
 # Automatic data download from ESGF --- [never]/when_missing/always
 # Use automatic download of missing CMIP3, CMIP5, CMIP6, CORDEX, and obs4MIPs
