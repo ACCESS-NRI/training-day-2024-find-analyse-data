@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#PBS -N workshop
+#PBS -l wd
+#PBS -P iq82
+#PBS -q express
+#PBS -l walltime=0:20:00  
+#PBS -l ncpus=14
+#PBS -l mem=63GB           
+#PBS -l jobfs=10GB        
+#PBS -l storage=gdata/nf33+gdata/fs38+gdata/oi10+gdata/xp65+gdata/hh5+gdata/ct11
+#PBS -o ./output_log
+#PBS -e ./error_log
+
+# module use /g/data/xp65/public/modules
+# module load conda/access-med
+
+module use /g/data/hh5/public/modules
+module load conda
+
+export ILAMB_ROOT_PARENT=/g/data/nf33/public/data/ILAMB
+export ILAMB_ROOT=$ILAMB_ROOT_PARENT/ILAMB_ROOT
+export CARTOPY_DATA_DIR=../
+export BUILD_DIR=./ilamb_result/_build
+
+rm -rf $BUILD_DIR
+mpiexec -n 10 ilamb-run --config CMIP6.cfg --model_setup ./workshop_version.txt --regions global --build_dir $BUILD_DIR
