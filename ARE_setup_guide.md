@@ -34,7 +34,7 @@ You will now be presented with the main JupyterLab instance configuration form. 
 
 <p align="center"><img src="assets/ARE_setup_guide/setup_image6.png" alt="drawing" width="50%"/></p>
 
-- *3.4* **Storage**: This is the list of `/g/data/` project data storage locations required to complete the workshop tutorials. In ARE, storage locations need to be explicitly defined to access these data from within a JupyterLab instance. Please enter the following string listing the projects mentioned in **Step 0** above: `gdata/nf33+gdata/xp65+gdata/dk92+gdata/fs38+gdata/p73+gdata/hh5+gdata/oi10`.
+- *3.4* **Storage**: This is the list of `/g/data/` project data storage locations required to complete the workshop tutorials. In ARE, storage locations need to be explicitly defined to access these data from within a JupyterLab instance. Please enter the following string listing the projects mentioned in **Step 0** above: `scratch/nf33+gdata/nf33+gdata/xp65+gdata/dk92+gdata/fs38+gdata/p73+gdata/hh5+gdata/oi10`.
 
 <p align="center"><img src="assets/ARE_setup_guide/setup_image7.png" alt="drawing" width="50%"/></p>
 
