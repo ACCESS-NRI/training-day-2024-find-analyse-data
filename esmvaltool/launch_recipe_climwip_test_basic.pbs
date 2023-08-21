@@ -1,7 +1,7 @@
 #!/bin/bash -l 
 #PBS -S /bin/bash
 #PBS -P nf33
-#PBS -l storage=gdata/rr3+gdata/xp65+gdata/al33
+#PBS -l storage=gdata/rr3+gdata/xp65+gdata/al33+gdata/nf33+scratch/nf33
 #PBS -N recipe_climwip_test_basic
 #PBS -l wd
 #PBS -o recipe_climwip_test_basic.out
