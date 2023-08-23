@@ -12,14 +12,10 @@
 #PBS -o ./output_log
 #PBS -e ./error_log
 
-# module use /g/data/xp65/public/modules
-# module load conda/access-med
+module use /g/data/xp65/public/modules
+module load conda/access-med
 
-module use /g/data/hh5/public/modules
-module load conda
-
-export ILAMB_ROOT_PARENT=/g/data/nf33/public/data/ILAMB
-export ILAMB_ROOT=$ILAMB_ROOT_PARENT/ILAMB_ROOT
+export ILAMB_ROOT=./ILAMB_ROOT
 export CARTOPY_DATA_DIR=/g/data/xp65/public/apps/cartopy-data
 export BUILD_DIR=./ilamb_result/_build
 
