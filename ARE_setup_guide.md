@@ -5,7 +5,7 @@
 - *0.1* In order to get the full benefit of the workshop tutorials, access to specific project data on Gadi is required. To help things run as smoothly as possible on the day, please visit the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/) and join the following projects:
 `nf33`, `xp65`, `dk92`, `fs38`, `p73`, `hh5` and `oi10` **prior** to the day of the workshop.
 
-- *0.2* Clone the workshop tutorials of interest found in the [NRI-Workshop2023-MED repo](https://github.com/ACCESS-NRI/NRI-Workshop2023-MED/tree/main) to an accessible location on Gadi.
+- *0.2* Clone the workshop tutorials of interest found in the [NRI-Workshop2023-MED repo](https://github.com/ACCESS-NRI/NRI-Workshop2023-MED/tree/main) to your personal directory within the `nf33` project location on Gadi.
 
 ## Step 1:
 Go to the [Australian Research Environment](https://are.nci.org.au/) website and login with your **NCI username and password**. If you don't have an NCI account, you can sign up for one at the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/).
