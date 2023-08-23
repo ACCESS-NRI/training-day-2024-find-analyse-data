@@ -8,7 +8,7 @@
 - *0.2* Clone the workshop tutorials of interest found in the [NRI-Workshop2023-MED repo](https://github.com/ACCESS-NRI/NRI-Workshop2023-MED/tree/main) to an accessible location on Gadi.
 
 ## Step 1:
-Go to the [Australian Research Environment](https://are-auth.nci.org.au/) website and login with your **NCI username and password**. If you don't have an NCI account, you can sign up for one at the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/).
+Go to the [Australian Research Environment](https://are.nci.org.au/) website and login with your **NCI username and password**. If you don't have an NCI account, you can sign up for one at the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/).
 
 <p align="center"><img src="assets/ARE_setup_guide/setup_image1.png" alt="drawing" width="50%"/></p>
 
