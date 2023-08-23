@@ -38,9 +38,9 @@ You will now be presented with the main VDI instance configuration form. Please 
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image7.png" alt="drawing" width="50%"/></p>
 
 - *3.5* Click `Advanced options ...`
-  * Optional: You can check the box here to receive an email notification when your JupyterLab instance starts, but as we are only running relatively small instances, they will spin up quickly and this probably isn't necessary.</p>
+  * Optional: You can check the box here to receive an email notification when your VDI instance starts, but as we are only running relatively small instances, they will spin up quickly and this probably isn't necessary.</p>
 
-<p align="center"><img src="../assets/ARE_setup_guide/setup_image12.png" alt="drawing" width="50%"/></p>
+<p align="center"><img src="../assets/access_rose_cylc/setup_image12.png" alt="drawing" width="50%"/></p>
 
 - *3.7* Click `Launch` to start your VDI Instance.
 
@@ -55,9 +55,10 @@ Once the VDI instance has started (this usually takes around 30 seconds) and thi
 
 All that remains to get started is to click `Launch VDI Desktop`.
 
-Start a terminal in the VDI session.
 
 #  Running the example suite
+
+Start a terminal in the VDI session.
 
 ```
 % module use /g/data/hr22/modulefiles
@@ -84,3 +85,6 @@ This example is a ACCESS-CM2 like AMIP (atmosphere only) suite, but uses lower h
 % cd ~/roses/u-cz168
 % rose suite-run
 ```
+
+You should now see something like this
+<p align="center"><img src="../assets/access_rose_cylc/vdi_cylc_run.png" alt="drawing" width="80%"/></p>
