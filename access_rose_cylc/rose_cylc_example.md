@@ -80,8 +80,6 @@ If you do not have a MOSRS account
 
 This example is a ACCESS-CM2 like AMIP (atmosphere only) suite, but uses lower horizontal resolution and runs a day at a time rather than 6 months at a time
 ```
-% module use /g/data/hr22/modulefiles
-% module load cylc7
 % cd ~/roses/u-cz168
 % rose suite-run
 ```
