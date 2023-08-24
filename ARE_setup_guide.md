@@ -1,4 +1,4 @@
-# ACCESS-NRI Workshop ARE setup guide
+# ACCESS-NRI Workshop ARE JupyterLab setup guide
 <p>Quick-start guide to setting up a JupyterLab session using the Australian Research Environment to run the ACCESS-NRI workshop exercises.</p>
 
 ## Step 0: Pre-workshop
