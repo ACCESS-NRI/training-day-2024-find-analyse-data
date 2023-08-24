@@ -1,3 +1,4 @@
+# Model Name (used as label), ABSOLUTE/PATH/TO/MODELS or relative to $ILAMB_ROOT/ , Optional comments
 ACCESS_ESM1-5_r1i1p1f1 ,  MODELS/ACCESS-ESM1-5/historical/r1i1p1f1  ,CMIP6
 BCC-ESM1_r1i1p1f1,  MODELS/BCC-ESM1/historical/r1i1p1f1,    CMIP6
 CanESM5_r1i1p1f1,   MODELS/CanESM5/historical/r1i1p1f1,    CMIP6
