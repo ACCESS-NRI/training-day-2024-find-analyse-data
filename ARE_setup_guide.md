@@ -3,7 +3,7 @@
 
 ## Step 0: Pre-workshop
 - *0.1* In order to get the full benefit of the workshop tutorials, access to specific project data on Gadi is required. To help things run as smoothly as possible on the day, please visit the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/) and join the following projects:
-`nf33`, `xp65`, `dk92`, `fs38`, `p73`, `hh5` and `oi10` **prior** to the day of the workshop.
+`nf33`, `xp65`, `dk92`, `fs38`, `rr3`, `al33`, `p73`, `ct11`, `hh5` and `oi10` **prior** to the day of the workshop.
 
 - *0.2* Clone the workshop tutorials of interest found in the [NRI-Workshop2023-MED repo](https://github.com/ACCESS-NRI/NRI-Workshop2023-MED/tree/main) to your personal directory within the `nf33` project location on Gadi.
 
@@ -34,7 +34,7 @@ You will now be presented with the main JupyterLab instance configuration form. 
 
 <p align="center"><img src="assets/ARE_setup_guide/setup_image6.png" alt="drawing" width="50%"/></p>
 
-- *3.4* **Storage**: This is the list of `/g/data/` project data storage locations required to complete the workshop tutorials. In ARE, storage locations need to be explicitly defined to access these data from within a JupyterLab instance. Please enter the following string listing the projects mentioned in **Step 0** above: `scratch/nf33+gdata/nf33+gdata/xp65+gdata/dk92+gdata/fs38+gdata/p73+gdata/hh5+gdata/oi10`.
+- *3.4* **Storage**: This is the list of `/g/data/` project data storage locations required to complete the workshop tutorials. In ARE, storage locations need to be explicitly defined to access these data from within a JupyterLab instance. Please enter the following string listing the projects mentioned in **Step 0** above: `scratch/nf33+gdata/nf33+gdata/xp65+gdata/dk92+gdata/fs38+gdata/p73+gdata/hh5+gdata/oi10+gdata/rr3+gdata/al33`.
 
 <p align="center"><img src="assets/ARE_setup_guide/setup_image7.png" alt="drawing" width="50%"/></p>
 
