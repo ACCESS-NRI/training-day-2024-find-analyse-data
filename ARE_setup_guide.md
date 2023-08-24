@@ -5,7 +5,13 @@
 - *0.1* In order to get the full benefit of the workshop tutorials, access to specific project data on Gadi is required. To help things run as smoothly as possible on the day, please visit the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/) and join the following projects:
 `nf33`, `xp65`, `dk92`, `fs38`, `rr3`, `al33`, `p73`, `ct11`, `hh5` and `oi10` **prior** to the day of the workshop.
 
-- *0.2* Clone the [workshop-training-2023](https://github.com/ACCESS-NRI/NRI-Workshop2023-MED/tree/main) Github repo to your user directory within `/scratch/nf33` on Gadi. This repo contains the training material needed for the afternoon. Depending on whether or not you've used the `nf33` project before, your user directory may or may not already exist.
+- *0.2* Log into Gadi via command line
+  
+   ```bash
+  ssh $USER@gadi.nci.org.au
+  ```
+
+- *0.3* Clone the [workshop-training-2023](https://github.com/ACCESS-NRI/NRI-Workshop2023-MED/tree/main) Github repo to your user directory within `/scratch/nf33` on Gadi. This repo contains the training material needed for the afternoon. Depending on whether or not you've used the `nf33` project before, your user directory may or may not already exist.
 
   ```bash
   mkdir -p /scratch/nf33/$USER
