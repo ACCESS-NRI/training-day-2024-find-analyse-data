@@ -31,7 +31,7 @@ download_dir: esmvaltool_climate_data
 
 # Auxiliary data directory
 # Used by some recipes to look for additional datasets.
-auxiliary_data_dir: auxiliary_data
+auxiliary_data_dir: /g/data/xp65/public/apps/cartopy-data
 
 # Automatic data download from ESGF --- [never]/when_missing/always
 # Use automatic download of missing CMIP3, CMIP5, CMIP6, CORDEX, and obs4MIPs
