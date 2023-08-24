@@ -108,13 +108,33 @@ drs:
   CMIP5: BADC
 ```
 
-## Step 3: Run a recipe inside a PBS Job
+## Step 3: The ESMValTool recipe
 
 To see all the recipes that are shipped with ESMValTool, type
 
 ```bash
 esmvaltool recipes list
 ```
+Have a look at the `recipe_climwip_test_basic.yml`
+Use the following command to copy the recipe to your working directory
+
+```bash
+esmvaltool recipes get recipe_climwip_test_basic.yml.yml
+```
+
+Now you should see the recipe file in your working directory (type `ls` to verify). Use the nano editor to open this file:
+
+```bash
+nano recipe_climwip_test_basic.yml.yml
+```
+Have a look at the recipe structure:
+
+- Documentation with relevant (citation) information
+- Datasets that should be analysed
+- Preprocessors groups of common preprocessing steps
+- Diagnostics scripts performing more specific evaluation steps
+
+## Step 3: Run a recipe inside a PBS Job
 
 Open the `launch_recipe_climwip_test_basic.pbs` file:
 
