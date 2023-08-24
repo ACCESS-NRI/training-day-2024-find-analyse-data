@@ -81,15 +81,16 @@ output_dir: esmvaltool_output
 
 ESMValTool uses several categories (in ESMValTool, this is referred to as projects) for input data based on their source. The current categories in the configuration file are mentioned below. For example, CMIP is used for a dataset from the Climate Model Intercomparison Project whereas OBS may be used for an observational dataset. More information about the projects used in ESMValTool is available in the official <a href="https://docs.esmvaltool.org/en/latest/" target="_blank">ESMValTool documentation</a>. When using ESMValTool on your own machine, you can create a directory to download climate model data or observation data sets and let the tool use data from there. It is also possible to ask ESMValTool to download climate model data as needed. This can be done by specifying a download directory and by setting the option to download data as shown below.
 
-#### Directory for storing downloaded climate data
+#### Directories for downloading climate data and auxiliary data
 
 ```yaml
-# Directory for storing downloaded climate data
+# Directory for storing downloaded climate data and find auxiliary data
 download_dir: esmvaltool_climate_data
+auxiliary_data_dir: /g/data/xp65/public/apps/cartopy-data
 search_esgf: never
 ```
 
-If you are working offline or do not want to download the data then set the option above to `never`. If you want to download data only when the necessary files are missing at the usual location, you can set the option to `when_missing`.
+If you are working offline or do not want to download the data then set the option above to `never`. If you want to download data only when the necessary files are missing at the usual location, you can set the option to `when_missing`. In particular, `cartopy` will be needed as auxiliary data for several plots. We provide them through `xp65` as shown above.
 
 The `rootpath` specifies the directories where ESMValTool will look for input data. For each category, you can define either one path or several paths as a list. For example:
 
@@ -169,8 +170,6 @@ Because of the computational costs, we will submit a job to Gadi through the Por
 
 module use /g/data/xp65/public/modules
 module load conda/access-med
-
-export CARTOPY_DATA_DIR=/g/data/xp65/public/apps/cartopy-data
 
 esmvaltool run --config_file config-user-on-gadi-v2.9.yml recipe_climwip_test_basic.yml
 ```
