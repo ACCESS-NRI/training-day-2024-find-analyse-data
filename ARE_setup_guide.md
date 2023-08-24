@@ -12,12 +12,12 @@
   ssh <your_nci_username>@gadi.nci.org.au
   ```
 
-- *0.3* Clone the [workshop-training-2023](https://github.com/ACCESS-NRI/NRI-Workshop2023-MED/tree/main) Github repo to your user directory within `/scratch/nf33` on Gadi. This repo contains the training material needed for the afternoon. Depending on whether or not you've used the `nf33` project before, your user directory may or may not already exist.
+- *0.3* Clone the [workshop-training-2023](https://github.com/ACCESS-NRI/workshop-training-2023/tree/main) Github repo to your user directory within `/scratch/nf33` on Gadi. This repo contains the training material needed for the afternoon. Depending on whether or not you've used the `nf33` project before, your user directory may or may not already exist.
 
   ```bash
   mkdir -p /scratch/nf33/$USER
   cd /scratch/nf33/$USER
-  git clone https://github.com/ACCESS-NRI/NRI-Workshop2023-MED.git
+  git clone https://github.com/ACCESS-NRI/workshop-training-2023.git
   ```
 
 ## Step 1:

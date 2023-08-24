@@ -4,11 +4,11 @@
 
 Please refer to the [ARE Setup Guide]() provided for the training.
 
-## Clone the NRI-Workshop2023 GitHub Repository
+## Clone the Workshop GitHub Repository
 
 ```bash
 cd /scratch/nf33/$USER
-git clone https://github.com/ACCESS-NRI/NRI-Workshop2023-MED.git
+git clone https://github.com/ACCESS-NRI/workshop-training-2023.git
 ```
 
 ## ESMValTool command line tool
@@ -16,7 +16,7 @@ git clone https://github.com/ACCESS-NRI/NRI-Workshop2023-MED.git
 ### Step 0: Move to the `esmvaltool` training directory
 
 ```bash
-cd /scratch/nf33/$USER/NRI-Workshop20230MED/esmvaltool
+cd /scratch/nf33/$USER/workshop-training-2023/esmvaltool
 ```
 
 ### Step 1: Check the ESMValTool environment by accessing the help for ESMValTool
