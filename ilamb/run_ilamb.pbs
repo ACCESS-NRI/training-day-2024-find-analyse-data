@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# For help with PBS directives on Gadi, go to https://opus.nci.org.au/display/Help/PBS+Directives+Explained
 #PBS -N workshop
 #PBS -l wd
 #PBS -P nf33
@@ -22,6 +22,8 @@ export BUILD_DIR=./ilamb_result/workshop
 ## Create ILAMB-ROOT folder structure
 ilamb-tree-generator --datasets cmip_models.yml --ilamb_root ILAMB_ROOT 
 
-## Run ILAMB
+# Remove output of previous runs
 rm -rf $BUILD_DIR
+
+# Run ILAMB in parallel with the ilamb.cfg configure file for the models defined in model_setup.txt
 mpiexec -n 10 ilamb-run --config ilamb.cfg --model_setup ./model_setup.txt --regions global --build_dir $BUILD_DIR
