@@ -170,6 +170,8 @@ Because of the computational costs, we will submit a job to Gadi through the Por
 module use /g/data/xp65/public/modules
 module load conda/access-med
 
+export CARTOPY_DATA_DIR=/g/data/xp65/public/apps/cartopy-data
+
 esmvaltool run --config_file config-user-on-gadi-v2.9.yml recipe_climwip_test_basic.yml
 ```
 
