@@ -8,7 +8,7 @@
 - *0.2* Log into Gadi via command line using your NCI username and password.
   
    ```bash
-  ssh <your_gadi_username>@gadi.nci.org.au
+  ssh <your_nci_username>@gadi.nci.org.au
   ```
 
 - *0.3* Clone the [workshop-training-2023](https://github.com/ACCESS-NRI/NRI-Workshop2023-MED/tree/main) Github repo to your user directory within `/scratch/nf33` on Gadi. This repo contains the training material needed for the afternoon. Depending on whether or not you've used the `nf33` project before, your user directory may or may not already exist.
