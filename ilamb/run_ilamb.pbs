@@ -4,7 +4,7 @@
 #PBS -l wd
 #PBS -P nf33
 #PBS -q express
-#PBS -l walltime=0:20:00  
+#PBS -l walltime=1:00:00  
 #PBS -l ncpus=14
 #PBS -l mem=63GB           
 #PBS -l jobfs=10GB        
