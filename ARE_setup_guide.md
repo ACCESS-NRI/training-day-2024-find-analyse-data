@@ -6,7 +6,7 @@
 - *0.1* In order to get the full benefit of the workshop tutorials, access to specific project data on Gadi is required. To help things run as smoothly as possible on the day, please log in to the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/) and join the following projects:
 `nf33`, `xp65`, `dk92`, `fs38`, `rr3`, `al33`, `p73`, `ct11`, `hh5` and `oi10` **prior** to the day of the workshop.
 
-- *0.2* Log in to Gadi via the command line using your NCI username and password.
+- *0.2* Log in to Gadi via the command line using your **NCI username and password**.
   
    ```bash
   ssh <your_nci_username>@gadi.nci.org.au
