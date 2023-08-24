@@ -21,7 +21,7 @@
   ```
 
 ## Step 1:
-Go to the [Australian Research Environment](https://are.nci.org.au/) website and login with your **NCI username and password**.
+Go to the [Australian Research Environment](https://are.nci.org.au/) website and log in with your **NCI username and password**.
 
 <p align="center"><img src="assets/ARE_setup_guide/setup_image1.png" alt="drawing" width="50%"/></p>
 
