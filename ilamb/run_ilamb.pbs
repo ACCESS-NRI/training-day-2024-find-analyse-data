@@ -9,8 +9,6 @@
 #PBS -l mem=63GB           
 #PBS -l jobfs=10GB        
 #PBS -l storage=gdata/nf33+gdata/fs38+gdata/oi10+gdata/xp65+gdata/ct11+scratch/nf33
-#PBS -o ./output_log
-#PBS -e ./error_log
 
 module use /g/data/xp65/public/modules
 module load conda/access-med
