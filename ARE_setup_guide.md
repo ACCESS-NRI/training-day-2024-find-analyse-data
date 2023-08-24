@@ -2,6 +2,7 @@
 <p>Quick-start guide to setting up a JupyterLab session using the Australian Research Environment to run the ACCESS-NRI workshop exercises.</p>
 
 ## Step 0: Pre-workshop
+- *0.0* If you do not have one already, please sign up for an NCI account at the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/).
 - *0.1* In order to get the full benefit of the workshop tutorials, access to specific project data on Gadi is required. To help things run as smoothly as possible on the day, please visit the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/) and join the following projects:
 `nf33`, `xp65`, `dk92`, `fs38`, `rr3`, `al33`, `p73`, `ct11`, `hh5` and `oi10` **prior** to the day of the workshop.
 
@@ -20,7 +21,7 @@
   ```
 
 ## Step 1:
-Go to the [Australian Research Environment](https://are.nci.org.au/) website and login with your **NCI username and password**. If you don't have an NCI account, you can sign up for one at the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/).
+Go to the [Australian Research Environment](https://are.nci.org.au/) website and login with your **NCI username and password**.
 
 <p align="center"><img src="assets/ARE_setup_guide/setup_image1.png" alt="drawing" width="50%"/></p>
 
