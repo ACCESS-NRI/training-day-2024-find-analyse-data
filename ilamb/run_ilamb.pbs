@@ -8,19 +8,20 @@
 #PBS -l ncpus=14
 #PBS -l mem=63GB           
 #PBS -l jobfs=10GB        
-#PBS -l storage=gdata/nf33+gdata/fs38+gdata/oi10+gdata/xp65+gdata/hh5+gdata/ct11+scratch/nf33
+#PBS -l storage=gdata/nf33+gdata/fs38+gdata/oi10+gdata/xp65+gdata/ct11+scratch/nf33
 #PBS -o ./output_log
 #PBS -e ./error_log
 
-#module use /g/data/xp65/public/modules
-#module load conda/access-med
-
-module use /g/data/hh5/public/modules
-module load conda/analysis3
+module use /g/data/xp65/public/modules
+module load conda/access-med
 
 export ILAMB_ROOT=./ILAMB_ROOT
 export CARTOPY_DATA_DIR=/g/data/xp65/public/apps/cartopy-data
-export BUILD_DIR=./ilamb_result/_build
+export BUILD_DIR=./ilamb_result/workshop
 
+## Create ILAMB-ROOT folder structure
+ilamb-tree-generator --datasets cmip_models.yml --ilamb_root ILAMB_ROOT 
+
+## Run ILAMB
 rm -rf $BUILD_DIR
-mpiexec -n 10 ilamb-run --config CMIP6.cfg --model_setup ./workshop_version.txt --regions global --build_dir $BUILD_DIR
+mpiexec -n 10 ilamb-run --config ilamb.cfg --model_setup ./model_setup.txt --regions global --build_dir $BUILD_DIR
