@@ -5,7 +5,7 @@ ACCESS NRI Workshop 2023: Model Evaluation Training
 
 Projects required:
 ```
-dk92, fs38, hh5 (optional), p73, xp65
+dk92, fs38, p73, xp65, hh5 (optional)
 ```
 
 ## Introduction to ILAMB
