@@ -2,14 +2,17 @@
 
 ## Preparation
 
-For the tutorial below, you will use the terminal to connect to Gadi via `ssh`. To do so, you need to have followed [Step 0 of the Workshop Setup](../ARE_setup_guide.md#step-0-pre-workshop), including the cloning of the workshop material into your `nf33` scratch directory. This will allow us to setup and submit computations.
+For this tutorial, we will use the VDI option of the [Australian Research Environment (ARE)](https://are.nci.org.au/). To get the VDI started, you need to follow the [ARE Setup Guide](../ARE_setup_guide.md), including the cloning of the `workshop-training-2023` material into your `scratch/nf33/$USER` directory.
 
-Once computed, we will use ARE VDI to look at the output, for which you need to follow all other steps of the [Workshop Setup](../ARE_setup_guide.md).
+Once VDI is started, you need to open a terminal (top left of the VDI screen):
+
+![Screenshot of the VDI window with a red arrow pointing towards the button to open a new Terminal.](../assets/ESMValTool/vdi_start.png)
 
 ## ESMValTool command line tool
 
 ### Step 0: Move to the `esmvaltool` training directory
 
+In the terminal, prompt:
 ```bash
 cd /scratch/nf33/$USER/workshop-training-2023/esmvaltool
 ```
@@ -23,7 +26,7 @@ module load conda/access-med
 esmvaltool --help
 ```
 
-prompting this help command should produce the following output:
+Prompting this help command should produce the following output:
 
 ![Screenshot of the terminal when prompting esmvalltool with the help argument](../assets/ESMValTool/esmvaltool_help.png)
 
@@ -187,21 +190,23 @@ After the banner and general information, the output starts with some important 
 
 ## Step 5: Visualise outputs with a VDI
 
-Please refer to the [ARE Setup Guide](../ARE_setup_guide.md) provided for the training to start a VDI session.
-
-![Screenshot of the VDI window with a red arrow pointing towards the button to open a new Terminal.](../assets/ESMValTool/vdi_start.png)
-
-Open a terminal (top left of the VDI screen) and navigate to the `esmvaltool_output` directory, and use the commmand below to start a local  HTTP server.
+Open a new terminal (top left of the VDI screen) and navigate to the `esmvaltool_output` directory, them use the commmand below to start a local  HTTP server.
 
 ```bash
 cd /scratch/nf33/$USER/NRI-Workshop2023-MED/esmvaltool/esmvaltool_output
 python3 -m http.server
 ```
 
-You can then start Firefox in the VDI screen and access the following address: localhost address:
+You can then start Firefox in the VDI screen and access the following localhost address to navigate into your specific `recipe*` directory and its `index.html`:
 
 ```
 http://0.0.0.0:8000/
 ```
 
-From there you can navigate to through the different directories to show the different evaluation plots.
+From there you can navigate to through the different directories to show the different evaluation plots:
+
+![Screenshot of the VDI browser window showing results of the ESMValTool comparison](../assets/ESMValTool/esmvaltool_results_1.png)
+
+![Screenshot of the VDI browser window showing results of the ESMValTool comparison](../assets/ESMValTool/esmvaltool_results_2.png)
+
+![Screenshot of the VDI browser window showing results of the ESMValTool comparison](../assets/ESMValTool/esmvaltool_results_3.png)
