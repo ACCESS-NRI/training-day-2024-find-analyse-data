@@ -193,7 +193,7 @@ After the banner and general information, the output starts with some important 
 Open a new terminal (top left of the VDI screen) and navigate to the `esmvaltool_output` directory, them use the commmand below to start a local  HTTP server.
 
 ```bash
-cd /scratch/nf33/$USER/NRI-Workshop2023-MED/esmvaltool/esmvaltool_output
+cd /scratch/nf33/$USER/workshop-training-2023/esmvaltool/esmvaltool_output
 python3 -m http.server
 ```
 
