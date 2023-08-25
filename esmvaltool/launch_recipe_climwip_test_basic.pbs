@@ -10,6 +10,7 @@
 #PBS -l walltime=01:00:00
 #PBS -l mem=64GB
 #PBS -l ncpus=10
+#PBS -l jobfs=10GB
 
 module use /g/data/xp65/public/modules
 module load conda/access-med

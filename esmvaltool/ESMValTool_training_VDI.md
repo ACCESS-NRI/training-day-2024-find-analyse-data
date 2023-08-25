@@ -1,17 +1,5 @@
 # ACCESS-NRI ESMValTool Introduction
 
-<!-- ## Starts VDI Session on ARE -->
-
-<!-- Please refer to the [ARE Setup Guide](../ARE_setup_guide.md) provided for the training to start a VDI session.
-
-Note that you need to join the projects `al33`, `nf33`, `r87`, `rr3`, and `xp65` and make sure to add at least `gdata/al33+gdata/nf33+gdata/r87+gdata/rr3+gdata/xp65+scratch/nf33` to the STORAGE keyword when starting the VDI.
-
-Once you have started a VDI Session, you can continue the tutorial by opening a new terminal window.
-
-Note that in the VDI linux session, you can copy via the shortkey `control + shift + C` and paste via `control + shift + V`.
-
-![Screenshot of the VDI window with a red arrow pointing towards the button to open a new Terminal.](../assets/vdi_start.png) -->
-
 ## Preparation
 
 For the tutorial below, you will use the terminal to connect to Gadi via `ssh`. To do so, you need to have followed [Step 0 of the Workshop Setup](../ARE_setup_guide.md#step-0-pre-workshop), including the cloning of the workshop material into your `nf33` scratch directory. This will allow us to setup and submit computations.
@@ -23,7 +11,7 @@ Once computed, we will use ARE VDI to look at the output, for which you need to 
 ### Step 0: Move to the `esmvaltool` training directory
 
 ```bash
-cd /scratch/nf33/$USER/NRI-Workshop2023-MED/esmvaltool
+cd /scratch/nf33/$USER/workshop-training-2023/esmvaltool
 ```
 
 ### Step 1: Check the ESMValTool environment by accessing the help for ESMValTool

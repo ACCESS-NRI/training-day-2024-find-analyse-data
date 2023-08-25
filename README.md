@@ -1,4 +1,4 @@
-# NRI-Workshop2023-MED
+# ACCESS-NRI Workshop 2023
 ACCESS NRI Workshop 2023: Model Evaluation Training
 
 ## Introduction to the ACCESS-NRI Intake catalog
