@@ -23,7 +23,7 @@ ARE provides a range of applications. In this section, we will use a Virtual Des
 The next step is to initialise the VDI before launching it.
 
 ![initialize](./image/initialize.png)
-One thing need to be added in `Advanced options`. just copy the command below in `PBS flags`
+One thing need to be added in `Advanced options`. just copy the command below and paste in `PBS flags`
 ```
 -v SINGULARITY_OVERLAYIMAGE=/g/data/xp65/public/apps/med_conda/envs/access-med-0.3.sqsh
 ```
