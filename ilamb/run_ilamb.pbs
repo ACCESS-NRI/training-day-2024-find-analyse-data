@@ -6,7 +6,7 @@
 #PBS -q express
 #PBS -l walltime=1:00:00  
 #PBS -l ncpus=20
-#PBS -l mem=63GB           
+#PBS -l mem=190GB           
 #PBS -l jobfs=10GB        
 #PBS -l storage=gdata/nf33+gdata/fs38+gdata/oi10+gdata/xp65+gdata/ct11+scratch/nf33
 #PBS -l jobfs=10GB
