@@ -53,7 +53,7 @@ cd /scratch/nf33/$USER
 In this directory, we need you to clone the whole repo from GitHub with the command below (if you already have this repo in your directory, you can jump to STEP 7):
 
 ```
-git clone https://github.com/ACCESS-NRI/NRI-Workshop2023-MED.git
+git clone https://github.com/ACCESS-NRI/workshop-training-2023.git
 ```
 
 ![](./image/gitclone.png)
