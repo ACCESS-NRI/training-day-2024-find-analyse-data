@@ -21,12 +21,11 @@ BCC-ESM1_r1i1p1f1,
 ```
 #### Approximate wall time usage:
 
-10-12 mins by 16 processes and 28 cpus and 128G mem(xx-large)
+arround 15 mins by 10 processes and 20 cpus and 190G mem
 
-arround 15 mins by 10 processes and 14 cpus and 63G mem(x-large)
+#### Results:
 
-#### Results
-Results can be viewed at `/g/data/kj13/admin/ILAMB/script_github_ilamb/2023-workshop/ilamb_result/_build`
+Results can be viewed at `/g/data/nf33/$USER/workshop-training-2023/ilamb/ilamb_result/workshop`
 
 ## Introduction to ESMValTool
 
