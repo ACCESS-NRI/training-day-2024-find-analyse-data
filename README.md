@@ -18,7 +18,6 @@ xp65, hh5, ct11, oi10, fs38
 ```
 ACCESS_ESM1-5_r1i1p1f1,
 BCC-ESM1_r1i1p1f1,
-CanESM5_r1i1p1f1
 ```
 #### Approximate wall time usage:
 
