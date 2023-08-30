@@ -68,7 +68,7 @@ cd /NRI-Workshop2023-MED/ilamb
 Go to the `ilamb` directory. You will see everything we need to run ILAMB on NCI. We have got everything set up so you don't need to organise anything, just use the command below to trigger ILAMB.
 
 ```
-pbs run_ilamb.pbs
+qsub run_ilamb.pbs
 ```
 
 ![](./image/runilamb.png)
