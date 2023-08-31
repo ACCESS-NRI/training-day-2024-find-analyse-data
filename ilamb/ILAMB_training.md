@@ -103,6 +103,7 @@ qstat
 ## Step 8
 
 After the process terminates, you can find details about the ILAMB running process in the output log file created by PBS.
+The file will be named : `run_ilamb.pbs.o########`
 
 <p align="center"><img src="../assets/ILAMB/confront.png" alt="drawing" width="60%"/></p>
 <p align="center"><img src="../assets/ILAMB/post.png" alt="drawing" width="60%"/></p>
