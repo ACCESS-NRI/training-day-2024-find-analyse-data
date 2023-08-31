@@ -29,9 +29,9 @@ You will now be presented with the main VDI instance configuration form. Please 
 
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image5.png" alt="drawing" width="50%"/></p>
 
-- *3.4* **Storage**: This is the list of `/g/data/` project data storage locations required to complete the workshop tutorials. In ARE, storage locations need to be explicitly defined to access these data from within a JupyterLab instance. Please enter the following string listing the projects mentioned in **Step 0** above:
+- *3.4* **Storage**: This is the list of `/g/data/` project data storage locations required to complete the workshop tutorials. In ARE, storage locations need to be explicitly defined to access these data from within a VDI instance. Please enter the following string:
 ```
-scratch/nf33+gdata/nf33+gdata/xp65+gdata/fs38+gdata/hh5+gdata/oi10
+gdata/nf33+gdata/xp65
 ```
 
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image6_1.png" alt="drawing" width="50%"/></p>
