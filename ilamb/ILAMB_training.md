@@ -4,7 +4,7 @@ This tutorial teaches you how to run ILAMB on ARE in the training section.
 
 ## STEP 1
 
-First is to open ARE(Australian Research Environment) by this [link](https://are-auth.nci.org.au/auth/ldap/login?back=&state=rl5xnescpalo7gqjcfj7qkwpx). 
+First is to open ARE(Australian Research Environment) by this [link](https://are.nci.org.au). 
 
 ![log in](./image/login.png)
 
