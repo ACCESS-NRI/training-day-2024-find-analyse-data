@@ -38,8 +38,6 @@ The next step is to initialise the VDI before launching it.
 > 
 > ![https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/ilamb/image/pbsflag.png](https://github.com/ACCESS-NRI/workshop-training-2023/raw/main/ilamb/image/pbsflag.png)
 
-It is similar to submitting a PBS job if you are familiar with it. In this part you just follow this picture to initialize your VDI environment, then click launch at the bottom.
-
 ## STEP 4
 Click the Launch button and you will be redirected to this page:
 
