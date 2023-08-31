@@ -1,6 +1,6 @@
 # ACCESS-NRI Training Day 4 September 2023
 
-This repository includes the material for the <a href="https://www.access-nri.org.au" target="_black">ACCESS-NRI</a> Training Day on 4 September 2023.  
+This repository includes the material for the <a href="https://www.access-nri.org.au" target="_black">ACCESS-NRI</a> <a href="https://www.access-nri.org.au/event/access-training-day-2023/" target="_black">Training Day</a> on 4 September 2023.  
 You can find a general overview of the ACCESS-NRI documentation on the <a href="https://access-hive.org.au" target="_blank">ACCESS-Hive</a>.  
 
 This reopository is structured according to the <a href="https://www.access-nri.org.au/access-training-day-program/" target="_blank">Training Day program</a>:
@@ -31,16 +31,16 @@ This exercise and its [training material](https://github.com/ACCESS-NRI/workshop
 
 This exercise will introduce you to the ACCESS-NRI Intake Catalogue, a tool to provide a way for Python users to discover and load data across a broad range of climate data products available on Gadi.
 
-To run the exercises, you need to be member of the following NCI projects:
+To run this exercise, you need to be member of the following NCI projects:
 ```
 nf33, dk92, fs38, p73, xp65, hh5 (optional)
 ```
 
 The exercises are split in two parts to be run via an ARE JupyterLab session:
 
-1. [A jupyter notebook exercise](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/Intake_tutorial_p1.ipynb) to introduce the ACCESS-NRI Intake catalog a show you how to use it to find and load model data for analysis.
+1. [Jupyter notebook exercise part 1](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/Intake_tutorial_p1.ipynb) to introduce the ACCESS-NRI Intake catalog a show you how to use it to find and load model data for analysis.
 
-2. [A jupyter notebook exercise](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/Intake_tutorial_p2.ipynb) to demonstrate how users can build Intake-ESM datastores for their ACCESS model runs using the access-nri-intake Python package.
+2. [Jupyter notebook exercise part 2](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/Intake_tutorial_p2.ipynb) to demonstrate how users can build Intake-ESM datastores for their ACCESS model runs using the access-nri-intake Python package.
 
 The ACCESS-NRI Intake Catalogue is currated by ACCESS-NRI with further information on its <a href="https://access-nri-intake-catalog.readthedocs.io/en/latest/index.html" target="_blank">documentation website</a> and <a href="https://access-hive.org.au/model_evaluation/model_evaluation_model_catalogs" target="_blank">this ACCESS-Hive page</a>.
 
@@ -48,7 +48,7 @@ The ACCESS-NRI Intake Catalogue is currated by ACCESS-NRI with further informati
 
 This exercise and its [training material](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/ilamb/ILAMB_training.md) will walk you the evaluation of models and confrontation with osbervational data with ILAMB.
 
-To run this exercises, you need to be member of the following NCI projects:
+To run this exercise, you need to be member of the following NCI projects:
 ```
 nf33, xp65, hh5, ct11, oi10, fs38 
 ```
@@ -64,11 +64,11 @@ Running ILAMB on <i>Gadi</i> is supported by ACCESS-NRI with further information
 
 This exercise will introduce you to <a href="https://www.esmvaltool.org/" target="_blank">ESMValTool</a>, a tool to evaluate Earth System Models (ESMs) against observations like those available through the <a href="https://esgf.llnl.gov/index.html" target="_blank">Earth System Grid Federation (ESGF)</a>.
 
-The training material includes a general [introduction to ESMValTool](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/esmvaltool/Introduction_to_ESMValTool.ipynb).
+The training material includes
+- [a jupyter notebook introduction to ESMValTool](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/esmvaltool/Introduction_to_ESMValTool.ipynb) and
+- [a guide for ESMValTool on <i>Gadi</i>](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/esmvaltool/ESMValTool_training_VDI.md) that will walk you through the evaluation of models with a selected evaluation code recipe.
 
-This exercise and its [training material](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/esmvaltool/ESMValTool_training_VDI.md) will walk you the evaluation of models by choosing one of the available code recipes.
-
-To run this exercises, you need to be member of the following NCI projects:
+To run this exercise, you need to be member of the following NCI projects:
 ```
 nf33, xp65, al33, rr3, r87
 ```
