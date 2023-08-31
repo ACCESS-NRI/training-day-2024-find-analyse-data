@@ -92,6 +92,11 @@ qsub run_ilamb.pbs
 
 <p align="center"><img src="../assets/ILAMB/runilamb.png" alt="drawing" width="60%"/></p>
 
+It will take about 15 mins to finish, use `qstat` to check the status of the processing.
+```
+qstat
+```
+
 ## Step 8
 
 After the process terminates, you can find details about the ILAMB running process in the output log file created by PBS.
