@@ -3,7 +3,7 @@
 This repository includes the material for the <a href="https://www.access-nri.org.au" target="_black">ACCESS-NRI</a> <a href="https://www.access-nri.org.au/event/access-training-day-2023/" target="_black">Training Day</a> on 4 September 2023.  
 You can find a general overview of the ACCESS-NRI documentation on the <a href="https://access-hive.org.au" target="_blank">ACCESS-Hive</a>.  
 
-This reopository is structured according to the <a href="https://www.access-nri.org.au/access-training-day-program/" target="_blank">Training Day program</a>:
+This repository is structured according to the <a href="https://www.access-nri.org.au/access-training-day-program/" target="_blank">Training Day program</a>:
 
 1. [Launching ARE (Australian Research Environment)](#1-launching-are-australian-research-environment)  
 2. [Running ACCESS models and Rose/cylc in ARE](#2-running-access-and-rosecylc-in-are)  
@@ -29,9 +29,9 @@ This exercise and its [training material](https://github.com/ACCESS-NRI/workshop
 
 ## 3. Introduction to the ACCESS-NRI Intake catalog
 
-This exercise will learn to use the ACCESS-NRI Intake catalog to discover, load and share ACCESS and ACCESS-related data.
+This exercise will teach you how to use the ACCESS-NRI Intake catalog to discover, load and share ACCESS and ACCESS-related data.
 
-To run this exercise, you need to be member of the following NCI projects:
+To run this exercise, you need to be a member of the following NCI projects:
 ```
 nf33, dk92, fs38, p73, xp65, hh5 (optional)
 ```
@@ -42,13 +42,13 @@ The exercises are split in two parts to be run via an ARE JupyterLab session:
 
 2. [Jupyter notebook exercise part 2](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/Intake_tutorial_p2.ipynb): creating Intake-ESM datastores for ACCESS output​
 
-The ACCESS-NRI Intake Catalogue is currated by ACCESS-NRI with further information on its <a href="https://access-nri-intake-catalog.readthedocs.io/en/latest/index.html" target="_blank">documentation website</a> and <a href="https://access-hive.org.au/model_evaluation/model_evaluation_model_catalogs" target="_blank">this ACCESS-Hive page</a>.
+The ACCESS-NRI Intake Catalogue is curated by ACCESS-NRI with further information on its <a href="https://access-nri-intake-catalog.readthedocs.io/en/latest/index.html" target="_blank">documentation website</a> and <a href="https://access-hive.org.au/model_evaluation/model_evaluation_model_catalogs" target="_blank">this ACCESS-Hive page</a>.
 
 ## 4. Model Evaluation with ILAMB (International Land Model Benchmarking)
 
-This exercise and its [training material](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/ilamb/ILAMB_training.md) will walk you the evaluation of models and confrontation with osbervational data with ILAMB.
+This exercise and its [training material](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/ilamb/ILAMB_training.md) will walk you through the evaluation of models and confrontation with observational data using ILAMB.
 
-To run this exercise, you need to be member of the following NCI projects:
+To run this exercise, you need to be a member of the following NCI projects:
 ```
 nf33, xp65, hh5, ct11, oi10, fs38 
 ```
@@ -68,7 +68,7 @@ The training material includes
 - [a jupyter notebook introduction to ESMValTool](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/esmvaltool/Introduction_to_ESMValTool.ipynb) and
 - [a guide for ESMValTool on <i>Gadi</i>](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/esmvaltool/ESMValTool_training_VDI.md) that will walk you through the evaluation of models with a selected evaluation code recipe.
 
-To run this exercise, you need to be member of the following NCI projects:
+To run this exercise, you need to be a member of the following NCI projects:
 ```
 nf33, xp65, al33, rr3, r87
 ```
