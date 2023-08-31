@@ -2,8 +2,10 @@
 <p>Guide for the rose cylc ACCESS-NRI workshop exercises.</p>
 
 ## Step 0: Pre-workshop
-Join the access, hh5, hr22 and ki32 projects
-
+To run this exercise, you need to be a member of the following NCI projects:
+```
+hh5, hr22 and ki32
+```
 Exercises will still work if you do not have a MOSRS account
 
 ## Step 1:
