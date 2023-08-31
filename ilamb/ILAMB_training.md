@@ -69,7 +69,7 @@ Then open a terminal, change the directory to your directory in this training se
 ```
 cd /scratch/nf33/$USER
 ```
-If you get the following error:'bash: cd: /scratch/nf33/$: No such file or directory',you will first need to create the directory with this 
+If you get the following error: `bash: cd: /scratch/nf33/$: No such file or directory`,you will first need to create the directory with this 
 command:
 ```
 mkdir /scratch/nf33/$USER
