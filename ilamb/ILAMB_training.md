@@ -27,11 +27,16 @@ ARE provides a range of applications. In this section, we will use a **Virtual D
 The next step is to initialise the VDI before launching it.
 
 ![initialize](./image/initialize.png)
-One thing need to be added in `Advanced options`. just copy the command below and paste in `PBS flags`
-```
--v SINGULARITY_OVERLAYIMAGE=/g/data/xp65/public/apps/med_conda/envs/access-med-0.3.sqsh
-```
-![PBSflag](./image/pbsflag.png)
+
+> [!IMPORTANT]
+> The **xp65** conda environment is a containerised environment which requires the `SINGULARITY_OVERLAYIMAGE` environment variable to be defined.
+> Please copy and paste the following:
+> 
+> `-v SINGULARITY_OVERLAYIMAGE=/g/data/xp65/public/apps/med_conda/envs/access-med-0.3.sqsh`
+> 
+> in the **PBS Flags** field of the **advanced options** section:
+> 
+> ![PBSflag](./image/pbsflag.png)
 
 It is similar to submitting a PBS job if you are familiar with it. In this part you just follow this picture to initialize your VDI environment, then click launch at the bottom.
 
