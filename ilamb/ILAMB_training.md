@@ -1,52 +1,54 @@
 # ACCESS-NRI 2023 Workshop ILAMB Tutorial
+<p>Guide for the ILAMB ACCESS-NRI workshop exercises.</p>
 
-This tutorial teaches you how to run ILAMB on ARE in the training section.
+## Step 0: Pre-workshop
+Join the xp65, hh5, ct11, oi10 and fs38 projects  
 
-## STEP 1
+## Step 1:
+Go to the [Australian Research Environment](https://are.nci.org.au/) website and login with your **NCI username and password**. If you don't have an NCI account, you can sign up for one at the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/).
 
-First is to open ARE(Australian Research Environment) by this [link](https://are.nci.org.au). 
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image1.png" alt="drawing" width="50%"/></p>
 
-![log in](./image/login.png)
-
-Use your NCI username and password to log in
-
-## STEP 2
-
-After logging in, you will see the dashboard page.
+## Step 2:
+Click on `Virtual Desktop` under *Featured Apps* to configure a new VDI instance. This option is also available under the *All Apps* section at the bottom of the page and the *Interactive Apps* dropdown located in the top menu.
 
 ![dashboard](./image/dashboard.png)
 
-ARE provides a range of applications. In this section, we will use a **Virtual Desktop Instance (VDI)**:
+## Step 3:
+You will now be presented with the main VDI instance configuration form. Please complete **only** the fields below - leave all other fields blank or to their default values.
 
-<p align="center">
-  <img src="./image/VDI.png" />
-</p>
+- *3.1* **Walltime**: The number of hours the JupyterLab instance will run. `1` hour is sufficient for each of the tutorials.
 
-## STEP 3
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image3.png" alt="drawing" width="50%"/></p>
 
-The next step is to initialise the VDI before launching it.
+- *3.2* **Compute Size**: Select `Large (7 cpus, 32G mem)` from the dropdown menu.
 
-![initialize](./image/initialize.png)
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image4.png" alt="drawing" width="50%"/></p>
 
-> [!IMPORTANT]
-> The **xp65** conda environment is a containerised environment which requires the `SINGULARITY_OVERLAYIMAGE` environment variable to be defined.
-> Please copy and paste the following:
-> 
-> `-v SINGULARITY_OVERLAYIMAGE=/g/data/xp65/public/apps/med_conda/envs/access-med-0.3.sqsh`
-> 
-> in the **PBS Flags** field of the **advanced options** section:
-> 
-> ![https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/ilamb/image/pbsflag.png](https://github.com/ACCESS-NRI/workshop-training-2023/raw/main/ilamb/image/pbsflag.png)
+- *3.3* **Project**: Please enter `nf33`. This will allocate SU usage to the workshop project.
 
-## STEP 4
-Click the Launch button and you will be redirected to this page:
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image5.png" alt="drawing" width="50%"/></p>
+
+- *3.4* **Storage**: This is the list of `/g/data/` project data storage locations required to complete the workshop tutorials. In ARE, storage locations need to be explicitly defined to access these data from within a JupyterLab instance. Please enter the following string listing the projects mentioned in **Step 0** above: `scratch/nf33+gdata/nf33+gdata/xp65+gdata/fs38+gdata/hh5+gdata/oi10`.
+
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image6.png" alt="drawing" width="50%"/></p>
+
+- *3.5* Click `Advanced options ...`
+
+<p align="center"><img src="./image/pbsflag.png" alt="drawing" width="49%"/></p>
+
+
+## Step 4
+
+Once the VDI instance has started (this usually takes around 30 seconds) and this status window should update and look something like the following, reporting that the instance has started and the time remaining. More detailed information on the instance can be accessed by clicking the Session ID link.
 
  ![running](./image/running.png)
 
-Maybe you will be in the queue for a while, it depends on what kind of queue and how much resources you apply for. When the status at the top right turns to running, you can click `Launch VDI Desktop` to access your VDI.
+All that remains to get started is to click `Launch VDI Desktop`.
 
-## STEP 5
-This is the Desktop of your VDI:
+
+## Step 5
+Start a terminal in the VDI session.
 
 ![](./image/vdi_desktop.png)
 
@@ -56,7 +58,7 @@ Then open a terminal, change the directory to your directory in this training se
 cd /scratch/nf33/$USER
 ```
 
-## STEP 6
+## Step 6
 In this directory, we need you to clone the whole repo from GitHub with the command below (if you already have this repo in your directory, you can jump to STEP 7):
 
 ```
@@ -67,7 +69,7 @@ git clone https://github.com/ACCESS-NRI/workshop-training-2023.git
 
 Then you are all set to start the exercises.
 
-## STEP 7
+## Step 7
 
 ```
 cd ./workshop-training-2023/ilamb
@@ -80,7 +82,7 @@ qsub run_ilamb.pbs
 
 ![](./image/runilamb.png)
 
-## STEP 8
+## Step 8
 
 After the process terminates, you can find details about the ILAMB running process in the output log file created by PBS.
 
@@ -119,6 +121,6 @@ You can browse the output by clicking on the links:
 ![](./image/ilamb_result1.png)
 ![](./image/ilamb_result2.png)
 
-# END
+# End of Tutorial
 
 You can find more details in [ilamb_tutorial](https://www.ilamb.org/doc/tutorial.html) and ACCESS-NRI tutorial about [how to use ilamb on NCI](https://ilamb-workflow.readthedocs.io/en/latest/) 
