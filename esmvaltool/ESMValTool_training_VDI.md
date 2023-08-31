@@ -1,23 +1,97 @@
-# ACCESS-NRI ESMValTool Introduction
+# ACCESS-NRI 2023 Workshop Introduction to ESMValTool
+<p>Guide for the ILAMB ACCESS-NRI workshop exercises.</p>
 
-## Preparation
+## Step 0: Pre-workshop
+Join the nf33, xp65, al33, rr3 and r87 projects  
 
-For this tutorial, we will use the VDI option of the [Australian Research Environment (ARE)](https://are.nci.org.au/). To get the VDI started, you need to follow the [ARE Setup Guide](../ARE_setup_guide.md), including the cloning of the `workshop-training-2023` material into your `scratch/nf33/$USER` directory.
+## Step 1:
+Go to the [Australian Research Environment](https://are.nci.org.au/) website and login with your **NCI username and password**. If you don't have an NCI account, you can sign up for one at the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/).
+
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image1.png" alt="drawing" width="50%"/></p>
+
+## Step 2:
+Click on `Virtual Desktop` under *Featured Apps* to configure a new VDI instance. This option is also available under the *All Apps* section at the bottom of the page and the *Interactive Apps* dropdown located in the top menu.
+
+![dashboard](../assets/ILAMB/dashboard.png)
+
+## Step 3:
+You will now be presented with the main VDI instance configuration form. Please complete **only** the fields below - leave all other fields blank or to their default values.
+
+- *3.1* **Walltime**: The number of hours the JupyterLab instance will run. `1` hour is sufficient for each of the tutorials.
+
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image3.png" alt="drawing" width="50%"/></p>
+
+- *3.2* **Compute Size**: Select `Large (7 cpus, 32G mem)` from the dropdown menu.
+
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image4.png" alt="drawing" width="50%"/></p>
+
+- *3.3* **Project**: Please enter `nf33`. This will allocate SU usage to the workshop project.
+
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image5.png" alt="drawing" width="50%"/></p>
+
+- *3.4* **Storage**: This is the list of `/g/data/` project data storage locations required to complete the workshop tutorials. In ARE, storage locations need to be explicitly defined to access these data from within a JupyterLab instance. Please enter the following string listing the projects mentioned in **Step 0** above: `scratch/nf33+gdata/nf33+gdata/xp65+gdata/fs38+gdata/hh5+gdata/oi10`.
+
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image6.png" alt="drawing" width="50%"/></p>
+
+- *3.5* Click `Advanced options ...`
+
+- *3.6* **Module directories / Modules**: There are two primary `conda` environments that will be used in the tutorials, either `xp65` or `hh5`. Please note, this will not work unless you have both joined the project (Step 0) **and** added it to storage (Step 3.4).<br></br>
+
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image11.png" alt="drawing" width="50%"/></p>
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image12.png" alt="drawing" width="50%"/></p>
+
+- *3.7* **PBS Flags**
+The **xp65** conda environment is a containerised environment that requires the `SINGULARITY_OVERLAYIMAGE` environment variable to be defined.
+Copy and paste the following: `-v SINGULARITY_OVERLAYIMAGE=/g/data/xp65/public/apps/med_conda/envs/access-med-0.3.sqsh`
+in the **PBS Flags** field of the **advanced options** section:
+
+<p align="center"><img src="../assets/ILAMB/pbsflag.png" alt="drawing" width="60%"/></p>
+
+## Step 4
+
+Once the VDI instance has started (this usually takes around 30 seconds) and this status window should update and look something like the following, reporting that the instance has started and the time remaining. More detailed information on the instance can be accessed by clicking the Session ID link.
+
+<p align="center"><img src="../assets/ILAMB/running.png" alt="drawing" width="60%"/></p>
+
+All that remains to get started is to click `Launch VDI Desktop`.
+
+
+## Step 5
+Start a terminal in the VDI session.
+
+<p align="center"><img src="../assets/ILAMB/vdi_desktop.png" alt="drawing" width="60%"/></p>
+
+
+Then open a terminal, change the directory to your directory in this training section
+
+```
+cd /scratch/nf33/$USER
+```
+
+## Step 6
+In this directory, we need you to clone the whole repo from GitHub with the command below (if you already have this repo in your directory, you can jump to STEP 7):
+
+```
+git clone https://github.com/ACCESS-NRI/workshop-training-2023.git
+```
+
+<p align="center"><img src="../assets/ILAMB/gitclone.png" alt="drawing" width="60%"/></p>
+
+Then you are all set to start the exercises.
+
+### Step 7: Move to the `esmvaltool` training directory
 
 Once VDI is started, you need to open a terminal (top left of the VDI screen):
 
 ![Screenshot of the VDI window with a red arrow pointing towards the button to open a new Terminal.](../assets/ESMValTool/vdi_start.png)
 
-## ESMValTool command line tool
-
-### Step 0: Move to the `esmvaltool` training directory
 
 In the terminal, prompt:
 ```bash
 cd /scratch/nf33/$USER/workshop-training-2023/esmvaltool
 ```
 
-### Step 1: Check the ESMValTool environment by accessing the help for ESMValTool
+### Step 8: Check the ESMValTool environment by accessing the help for ESMValTool
 
 ```bash
 module use /g/data/xp65/public/modules
@@ -30,7 +104,7 @@ Prompting this help command should produce the following output:
 
 ![Screenshot of the terminal when prompting esmvalltool with the help argument](../assets/ESMValTool/esmvaltool_help.png)
 
-### Step 2: The configuration file
+### Step 9: The configuration file
 
 In the next step, we want to have a look at the esmvaltool configuration file that we will use in this tutorial. You can use a text editor of your choice. In this tutorial, we use a text editor called `nano`:
 
@@ -111,7 +185,7 @@ drs:
   CMIP5: BADC
 ```
 
-## Step 3: The ESMValTool recipe
+## Step 10: The ESMValTool recipe
 
 To see all the recipes that are shipped with ESMValTool, type
 
@@ -141,7 +215,7 @@ Have a look at the recipe structure:
 - Preprocessors groups of common preprocessing steps
 - Diagnostics scripts performing more specific evaluation steps
 
-## Step 3: Run a recipe inside a PBS Job
+## Step 11: Run a recipe inside a PBS Job
 
 Because of the computational costs, we will submit a job to Gadi through the Portable Batch System. To do so, you need to use a submission script, for example the one that we already provide. Open the `launch_recipe_climwip_test_basic.pbs` file:
 
@@ -176,7 +250,7 @@ To monitor the progress, you can use the status prompt for the job ID
 qstat
 ```
 
-## Step 4: Investigating the log messages
+## Step 12: Investigating the log messages
 
 Once the job is finished, you can open the log message (`recipe_climwip_test_basic.o*`) and check a few things:
 
@@ -188,7 +262,7 @@ After the banner and general information, the output starts with some important 
 - Can you guess what the different output directories are for?
 - ESMValTool creates two log files. What is the difference?
 
-## Step 5: Visualise outputs with a VDI
+## Step 13: Visualise outputs with a VDI
 
 Open a new terminal (top left of the VDI screen) and navigate to the `esmvaltool_output` directory, them use the commmand below to start a local  HTTP server.
 
