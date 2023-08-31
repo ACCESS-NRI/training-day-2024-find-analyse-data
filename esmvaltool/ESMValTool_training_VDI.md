@@ -1,8 +1,16 @@
 # ACCESS-NRI 2023 Workshop Introduction to ESMValTool
-<p>Guide for the ESMValTool ACCESS-NRI workshop exercises.</p>
+
+This exercise will introduce you to <a href="https://www.esmvaltool.org/" target="_blank">ESMValTool</a>, a tool to evaluate Earth System Models (ESMs) against observations like those available through the <a href="https://esgf.llnl.gov/index.html" target="_blank">Earth System Grid Federation (ESGF)</a>.
+
+In this document, we will use the **Virtual Desktop Infrastructure (VDI)**. We also provide an adjusted Jupyter version [for advanced users of ESMValTool](./Introduction_to_ESMValTool.ipynb).
+
+Running ESMValTool on <i>Gadi</i> is supported by ACCESS-NRI with further information on <a href="https://access-hive.org.au/model_evaluation/model_evaluation_on_gadi/model_evaluation_on_gadi_esmvaltool/" target="_blank">this ACCESS-Hive page</a> to supplement the <a href="https://docs.esmvaltool.org/en/latest/" target="_blank">official ESMValTool documentation</a>.
 
 ## Step 0: Pre-workshop
-Join the nf33, xp65, al33, rr3 and r87 projects  
+To run this exercise, you need to be a member of the following NCI projects:
+```
+nf33, xp65, al33, rr3, r87
+```
 
 ## Step 1:
 Go to the [Australian Research Environment](https://are.nci.org.au/) website and login with your **NCI username and password**. If you don't have an NCI account, you can sign up for one at the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/).
@@ -17,7 +25,7 @@ Click on `Virtual Desktop` under *Featured Apps* to configure a new VDI instance
 ## Step 3:
 You will now be presented with the main VDI instance configuration form. Please complete **only** the fields below - leave all other fields blank or to their default values.
 
-- *3.1* **Walltime**: The number of hours the JupyterLab instance will run. `1` hour is sufficient for each of the tutorials.
+- *3.1* **Walltime**: The number of hours the VDI instance will run. `1` hour is sufficient for each of the tutorials.
 
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image3.png" alt="drawing" width="50%"/></p>
 
@@ -29,12 +37,12 @@ You will now be presented with the main VDI instance configuration form. Please 
 
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image5.png" alt="drawing" width="50%"/></p>
 
-- *3.4* **Storage**: This is the list of `/g/data/` project data storage locations required to complete the workshop tutorials. In ARE, storage locations need to be explicitly defined to access these data from within a JupyterLab instance. Please enter the following string listing the projects mentioned in **Step 0** above:
+- *3.4* **Storage**: This is the list of `/g/data/` project data storage locations required to complete the workshop tutorials. In ARE, storage locations need to be explicitly defined to access these data from within a VDI instance. Please enter the following string:
 ```
-scratch/nf33+gdata/nf33+gdata/xp65+gdata/fs38+gdata/hh5+gdata/oi10
+gdata/nf33+gdata/xp65
 ```
 
-<p align="center"><img src="../assets/ARE_setup_guide/setup_image6.png" alt="drawing" width="50%"/></p>
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image6_1.png" alt="drawing" width="50%"/></p>
 
 - *3.5* Click `Advanced options ...`
 
@@ -58,6 +66,13 @@ Once the VDI instance has started (this usually takes around 30 seconds) and thi
 
 All that remains to get started is to click `Launch VDI Desktop`.
 
+## Suggestion: Copy + paste from your local machine to VDI
+
+- click on the control bar in the center left of the VDI window
+- click on the clipboard: you can copy text from your local machine into this with the usual shortkeys
+- right-click and click *Paste* to paste the content in VDI
+
+<p align="center"><img src="../assets/ARE_setup_guide/vdi_copy_paste.png" alt="drawing" width="40%"/></p>
 
 ## Step 5
 Start a terminal in the VDI session.
@@ -104,10 +119,10 @@ Prompting this help command should produce the following output:
 
 ### Step 9: The configuration file
 
-In the next step, we want to have a look at the esmvaltool configuration file that we will use in this tutorial. You can use a text editor of your choice. In this tutorial, we use a text editor called `nano`:
+In the next step, we want to have a look at the esmvaltool configuration file that we will use in this tutorial. You can use a text editor of your choice. In this tutorial, we will simply print the content via `more`:
 
 ```bash
-nano config-user-on-gadi-v2.9.yml
+more config-user-on-gadi-v2.9.yml
 ```
 
 This file contains the information for:
@@ -201,10 +216,10 @@ Use the following command to copy the recipe to your working directory
 esmvaltool recipes get recipe_climwip_test_basic.yml
 ```
 
-Now you should see the recipe file in your working directory (type `ls` to verify). Use your text editor (e.g. nano) to open this file:
+Now you should see the recipe file in your working directory (type `ls` to verify). Use your text editor to open this file or display the contents via `more`:
 
 ```bash
-nano recipe_climwip_test_basic.yml
+more recipe_climwip_test_basic.yml
 ```
 Have a look at the recipe structure:
 
@@ -282,3 +297,9 @@ From there you can navigate to through the different directories to show the dif
 ![Screenshot of the VDI browser window showing results of the ESMValTool comparison](../assets/ESMValTool/esmvaltool_results_2.png)
 
 ![Screenshot of the VDI browser window showing results of the ESMValTool comparison](../assets/ESMValTool/esmvaltool_results_3.png)
+
+## Step 14: Close servers and VDI session
+
+- Close the browser window
+- Close the `http` server by prompting `ctrl+C` in the terminal, then prompt `exit` to close the terminal
+- In the menu bar (top left), click on `System` and then `Log Out` and close the browser tab or delete the session in *My Interactive Sessions* of the ARE

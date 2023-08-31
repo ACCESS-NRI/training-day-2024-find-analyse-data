@@ -1,8 +1,14 @@
 # ACCESS-NRI 2023 Workshop ILAMB Tutorial
 <p>Guide for the ILAMB ACCESS-NRI workshop exercises.</p>
 
+This exercise will walk you through the evaluation of models and confrontation with observational data using the <a href="https://www.ilamb.org/" target="_blank">International Land Model Benchmarking (ILAMB)</a>.
+
 ## Step 0: Pre-workshop
-Join the xp65, hh5, ct11, oi10 and fs38 projects  
+
+To run this exercise, you need to be a member of the following NCI projects:
+```
+nf33, xp65, hh5, ct11, oi10, fs38 
+```
 
 ## Step 1:
 Go to the [Australian Research Environment](https://are.nci.org.au/) website and login with your **NCI username and password**. If you don't have an NCI account, you can sign up for one at the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/).
@@ -21,7 +27,7 @@ You will now be presented with the main VDI instance configuration form. Please 
 
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image3.png" alt="drawing" width="50%"/></p>
 
-- *3.2* **Compute Size**: Select `Large (7 cpus, 32G mem)` from the dropdown menu.
+- *3.2* **Compute Size**: Select `tiny` from the dropdown menu.
 
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image4.png" alt="drawing" width="50%"/></p>
 
@@ -29,7 +35,7 @@ You will now be presented with the main VDI instance configuration form. Please 
 
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image5.png" alt="drawing" width="50%"/></p>
 
-- *3.4* **Storage**: This is the list of `/g/data/` project data storage locations required to complete the workshop tutorials. In ARE, storage locations need to be explicitly defined to access these data from within a JupyterLab instance. Please enter the following string listing the projects mentioned in **Step 0** above: `scratch/nf33+gdata/nf33+gdata/xp65+gdata/fs38+gdata/hh5+gdata/oi10`.
+- *3.4* **Storage**: This is the list of `/g/data/` project data storage locations required to complete the workshop tutorials. In ARE, storage locations need to be explicitly defined to access these data from within a VDI instance. Please enter the following string: `gdata/nf33`.
 
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image6.png" alt="drawing" width="50%"/></p>
 
@@ -54,6 +60,13 @@ Once the VDI instance has started (this usually takes around 30 seconds) and thi
 
 All that remains to get started is to click `Launch VDI Desktop`.
 
+## Suggestion: Copy + paste from your local machine to VDI
+
+- click on the control bar in the center left of the VDI window
+- click on the clipboard: you can copy text from your local machine into this with the usual shortkeys
+- right-click and click *Paste* to paste the content in VDI
+
+<p align="center"><img src="../assets/ARE_setup_guide/vdi_copy_paste.png" alt="drawing" width="40%"/></p>
 
 ## Step 5
 Start a terminal in the VDI session.
@@ -71,6 +84,7 @@ command:
 ```
 mkdir /scratch/nf33/$USER
 ```
+
 ## Step 6
 In this directory, we need you to clone the whole repo from GitHub with the command below (if you already have this repo in your directory, you can jump to STEP 7):
 
@@ -140,6 +154,18 @@ You can browse the output by clicking on the links:
 <p align="center"><img src="../assets/ILAMB/ilamb_result1.png" alt="drawing"/></p>
 <p align="center"><img src="../assets/ILAMB/ilamb_result2.png" alt="drawing"/></p>
 
+## Step 9: Close servers and VDI session
+
+- Close the browser window
+- Close the `http` server by prompting `ctrl+C` in the terminal, then prompt `exit` to close the terminal
+- In the menu bar (top left), click on `System` and then `Log Out` and close the browser tab or delete the session in *My Interactive Sessions* of the ARE
+
+
 # End of Tutorial
 
-You can find more details in [ilamb_tutorial](https://www.ilamb.org/doc/tutorial.html) and ACCESS-NRI tutorial about [how to use ilamb on NCI](https://ilamb-workflow.readthedocs.io/en/latest/) 
+You can find the expected results of this exercise in this <i>Gadi</i> directory:
+```
+/g/data/nf33/public/data/ILAMB/ILAMB_RESULT
+```
+
+Running ILAMB on <i>Gadi</i> is supported by ACCESS-NRI. You can find further information on <a href="https://access-hive.org.au/model_evaluation/model_evaluation_on_gadi/model_evaluation_on_gadi_ilamb/" target="_blank">this ACCESS-Hive page</a> as well as <a href="https://ilamb-workflow.readthedocs.io/en/latest/" target="_blank"><i>Gadi</i>-specific documentation</a> to supplement the <a href="https://www.ilamb.org" target="_blank">official ILAMB documentation</a> and <a href="https://www.ilamb.org/doc/tutorial.html" target="_blank">tutorials</a>.
