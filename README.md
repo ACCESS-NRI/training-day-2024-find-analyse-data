@@ -7,7 +7,7 @@ This reopository is structured according to the <a href="https://www.access-nri.
 
 1. [Launching ARE (Australian Research Environment)](#1-launching-are-australian-research-environment)  
 2. [Running ACCESS models and Rose/cylc in ARE](#2-running-access-and-rosecylc-in-are)  
-3. [Finding and Loading Model Data with Intake](#3-finding-and-loading-model-data-with-intake)  
+3. [Finding and Loading Model Data with Intake](#3-introduction-to-the-access-nri-intake-catalog)  
 4. [Model Evaluation with ILAMB (International Land Model Benchmarking)](#4-model-evaluation-with-ilamb-international-land-model-benchmarking)
 5. [Model Evaluation with ESMValTool](#5-model-evaluation-with-esmvaltool)
 
