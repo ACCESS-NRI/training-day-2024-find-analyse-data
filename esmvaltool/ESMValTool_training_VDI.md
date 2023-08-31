@@ -1,8 +1,16 @@
 # ACCESS-NRI 2023 Workshop Introduction to ESMValTool
-<p>Guide for the ESMValTool ACCESS-NRI workshop exercises.</p>
+
+This exercise will introduce you to <a href="https://www.esmvaltool.org/" target="_blank">ESMValTool</a>, a tool to evaluate Earth System Models (ESMs) against observations like those available through the <a href="https://esgf.llnl.gov/index.html" target="_blank">Earth System Grid Federation (ESGF)</a>.
+
+In this document, we will use the **Virtual Desktop Infrastructure (VDI)**. We also provide an adjusted Jupyter version [for advanced users of ESMValTool](./Introduction_to_ESMValTool.ipynb).
+
+Running ESMValTool on <i>Gadi</i> is supported by ACCESS-NRI with further information on <a href="https://access-hive.org.au/model_evaluation/model_evaluation_on_gadi/model_evaluation_on_gadi_esmvaltool/" target="_blank">this ACCESS-Hive page</a> to supplement the <a href="https://docs.esmvaltool.org/en/latest/" target="_blank">official ESMValTool documentation</a>.
 
 ## Step 0: Pre-workshop
-Join the nf33, xp65, al33, rr3 and r87 projects  
+To run this exercise, you need to be a member of the following NCI projects:
+```
+nf33, xp65, al33, rr3, r87
+```
 
 ## Step 1:
 Go to the [Australian Research Environment](https://are.nci.org.au/) website and login with your **NCI username and password**. If you don't have an NCI account, you can sign up for one at the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/).
