@@ -35,19 +35,16 @@ You will now be presented with the main VDI instance configuration form. Please 
 
 - *3.5* Click `Advanced options ...`
 
-- *3.6* **Module directories / Modules**: This tutorial uses the `xp65` conda environment. Please note, that this will not work unless you have both joined the project (Step 0) **and** added it to storage (Step 3.4).<br></br>
 
-<p align="center"><img src="../assets/ARE_setup_guide/setup_image11.png" alt="drawing" width="50%"/></p>
-<p align="center"><img src="../assets/ARE_setup_guide/setup_image12.png" alt="drawing" width="50%"/></p>
 
-- *3.7* **PBS Flags**
+- *3.6* **PBS Flags**
 The **xp65** conda environment is a containerised environment that requires the `SINGULARITY_OVERLAYIMAGE` environment variable to be defined.
 Copy and paste the following: `-v SINGULARITY_OVERLAYIMAGE=/g/data/xp65/public/apps/med_conda/envs/access-med-0.3.sqsh`
 in the **PBS Flags** field of the **advanced options** section:
 
 <p align="center"><img src="../assets/ILAMB/pbsflag.png" alt="drawing" width="60%"/></p>
 
-- *3.8* Click `Launch` to start your VDI Instance.
+- *3.7* Click `Launch` to start your VDI Instance.
 
 ## Step 4
 
