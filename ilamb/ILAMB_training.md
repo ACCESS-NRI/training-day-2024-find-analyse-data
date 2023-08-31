@@ -63,7 +63,7 @@ Then you are all set to start the exercises.
 ## STEP 7
 
 ```
-cd /workshop-training-2023/ilamb
+cd ./workshop-training-2023/ilamb
 ```
 Go to the `ilamb` directory. You will see everything we need to run ILAMB on NCI. We have got everything set up so you don't need to organise anything, just use the command below to trigger ILAMB.
 
