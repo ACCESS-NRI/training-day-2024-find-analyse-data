@@ -47,6 +47,8 @@ in the **PBS Flags** field of the **advanced options** section:
 
 <p align="center"><img src="../assets/ILAMB/pbsflag.png" alt="drawing" width="60%"/></p>
 
+- *3.8* Click `Launch` to start your VDI Instance.
+
 ## Step 4
 
 Once the VDI instance has started (this usually takes around 30 seconds) and this status window should update and look something like the following, reporting that the instance has started and the time remaining. More detailed information on the instance can be accessed by clicking the Session ID link.
