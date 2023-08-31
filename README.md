@@ -53,7 +53,7 @@ The ACCESS-NRI Intake Catalogue is curated by ACCESS-NRI with further informatio
 
 ## 3. Model Evaluation with ILAMB (International Land Model Benchmarking)
 
-This exercise and its [training material](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/ilamb/ILAMB_training.md) will walk you through the evaluation of models and confrontation with observational data using ILAMB.
+This exercise and its [training material](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/ilamb/ILAMB_training.md) will walk you through the evaluation of models and confrontation with observational data using the [International Land Model Benchmarking (ILAMB)](https://www.ilamb.org/).
 
 To run this exercise, you need to be a member of the following NCI projects:
 ```
