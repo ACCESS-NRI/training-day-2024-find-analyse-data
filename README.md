@@ -27,9 +27,9 @@ The [training material for this exercise](https://github.com/ACCESS-NRI/workshop
 
 This exercise and its [training material](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/access_rose_cylc/rose_cylc_example.md) will walk you through the setup of an [ACCESS Coupled Model 2 (ACCESS-CM2)](https://access-hive.org.au/models/configurations/access-cm/) model run.
 
-## 3. Finding and Loading Model Data with Intake
+## 3. Introduction to the ACCESS-NRI Intake catalog
 
-This exercise will introduce you to the ACCESS-NRI Intake Catalogue, a tool to provide a way for Python users to discover and load data across a broad range of climate data products available on Gadi.
+This exercise will learn to use the ACCESS-NRI Intake catalog to discover, load and share ACCESS and ACCESS-related data.
 
 To run this exercise, you need to be member of the following NCI projects:
 ```
@@ -38,9 +38,9 @@ nf33, dk92, fs38, p73, xp65, hh5 (optional)
 
 The exercises are split in two parts to be run via an ARE JupyterLab session:
 
-1. [Jupyter notebook exercise part 1](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/Intake_tutorial_p1.ipynb) to introduce the ACCESS-NRI Intake catalog a show you how to use it to find and load model data for analysis.
+1. [Jupyter notebook exercise part 1](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/Intake_tutorial_p1.ipynb): using the ACCESS-NRI Intake catalog​
 
-2. [Jupyter notebook exercise part 2](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/Intake_tutorial_p2.ipynb) to demonstrate how users can build Intake-ESM datastores for their ACCESS model runs using the access-nri-intake Python package.
+2. [Jupyter notebook exercise part 2](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/Intake_tutorial_p2.ipynb): creating Intake-ESM datastores for ACCESS output​
 
 The ACCESS-NRI Intake Catalogue is currated by ACCESS-NRI with further information on its <a href="https://access-nri-intake-catalog.readthedocs.io/en/latest/index.html" target="_blank">documentation website</a> and <a href="https://access-hive.org.au/model_evaluation/model_evaluation_model_catalogs" target="_blank">this ACCESS-Hive page</a>.
 
@@ -72,6 +72,5 @@ To run this exercise, you need to be member of the following NCI projects:
 ```
 nf33, xp65, al33, rr3, r87
 ```
-
 
 Running ESMValTool on <i>Gadi</i> is supported by ACCESS-NRI with further information on <a href="https://access-hive.org.au/model_evaluation/model_evaluation_on_gadi/model_evaluation_on_gadi_esmvaltool/" target="_blank">this ACCESS-Hive page</a> to supplement the <a href="https://docs.esmvaltool.org/en/latest/" target="_blank">official ESMValTool documentation</a>.
