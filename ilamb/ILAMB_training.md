@@ -35,7 +35,7 @@ You will now be presented with the main VDI instance configuration form. Please 
 
 - *3.5* Click `Advanced options ...`
 
-- *3.6* **Module directories / Modules**: There are two primary `conda` environments that will be used in the tutorials, either `xp65` or `hh5`. Please note, this will not work unless you have both joined the project (Step 0) **and** added it to storage (Step 3.4).<br></br>
+- *3.6* **Module directories / Modules**: This tutorial uses the `xp65` conda environment. Please note, that this will not work unless you have both joined the project (Step 0) **and** added it to storage (Step 3.4).<br></br>
 
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image11.png" alt="drawing" width="50%"/></p>
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image12.png" alt="drawing" width="50%"/></p>
