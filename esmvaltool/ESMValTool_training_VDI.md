@@ -34,7 +34,7 @@ You will now be presented with the main VDI instance configuration form. Please 
 scratch/nf33+gdata/nf33+gdata/xp65+gdata/fs38+gdata/hh5+gdata/oi10
 ```
 
-<p align="center"><img src="../assets/ARE_setup_guide/setup_image6.png" alt="drawing" width="50%"/></p>
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image6_1.png" alt="drawing" width="50%"/></p>
 
 - *3.5* Click `Advanced options ...`
 
