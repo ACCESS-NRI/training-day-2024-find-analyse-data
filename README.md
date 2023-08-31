@@ -16,11 +16,13 @@ We value your feedback on this training, in-person or via the <a href="https://f
 
 To do the training on Intake, ILAMB and ESMValTool, you will need to clone a local copy of this repo to Gadi as follows: 
 
-1. Log in to Gadi via the command line using your NCI username and password.
+1. Log in to Gadi via the command line of your preferred terminal using your NCI username and password.
 
    ```bash
    ssh <your_nci_username>@gadi.nci.org.au
    ```
+
+   For example, you could use the **Gadi Terminal** app provided after logging in to the <a href="https://are.nci.org.au" target="_blank">ARE</a>.
    
 2. Clone this Github repo to your user directory within `/scratch/nf33` on Gadi. Depending on whether or not you've used the nf33 project before, your user directory may or may not already exist.
 
