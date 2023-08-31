@@ -25,7 +25,7 @@ arround 15 mins by 10 processes and 20 cpus and 190G mem
 
 #### Results:
 
-Results can be viewed at `/g/data/nf33/$USER/workshop-training-2023/ilamb/ilamb_result/workshop`
+Results can be viewed at `/scratch/nf33/$USER/workshop-training-2023/ilamb/ilamb_result/workshop`
 
 ## Introduction to ESMValTool
 
