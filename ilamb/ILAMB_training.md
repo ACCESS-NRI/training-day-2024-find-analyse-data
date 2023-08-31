@@ -154,6 +154,13 @@ You can browse the output by clicking on the links:
 <p align="center"><img src="../assets/ILAMB/ilamb_result1.png" alt="drawing"/></p>
 <p align="center"><img src="../assets/ILAMB/ilamb_result2.png" alt="drawing"/></p>
 
+## Step 9: Close servers and VDI session
+
+- Close the browser window
+- Close the `http` server by prompting `ctrl+C` in the terminal, then prompt `exit` to close the terminal
+- In the menu bar (top left), click on `System` and then `Log Out` and close the browser tab or delete the session in *My Interactive Sessions* of the ARE
+
+
 # End of Tutorial
 
 You can find the expected results of this exercise in this <i>Gadi</i> directory:
