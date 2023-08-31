@@ -25,7 +25,7 @@ Click on `Virtual Desktop` under *Featured Apps* to configure a new VDI instance
 ## Step 3:
 You will now be presented with the main VDI instance configuration form. Please complete **only** the fields below - leave all other fields blank or to their default values.
 
-- *3.1* **Walltime**: The number of hours the JupyterLab instance will run. `1` hour is sufficient for each of the tutorials.
+- *3.1* **Walltime**: The number of hours the VDI instance will run. `1` hour is sufficient for each of the tutorials.
 
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image3.png" alt="drawing" width="50%"/></p>
 
@@ -297,3 +297,9 @@ From there you can navigate to through the different directories to show the dif
 ![Screenshot of the VDI browser window showing results of the ESMValTool comparison](../assets/ESMValTool/esmvaltool_results_2.png)
 
 ![Screenshot of the VDI browser window showing results of the ESMValTool comparison](../assets/ESMValTool/esmvaltool_results_3.png)
+
+## Step 14: Close servers and VDI session
+
+- Close the browser window
+- Close the `http` server by prompting `ctrl+C` in the terminal, then prompt `exit` to close the terminal
+- In the menu bar (top left), click on `System` and then `Log Out` and close the browser tab or delete the session in *My Interactive Sessions* of the ARE
