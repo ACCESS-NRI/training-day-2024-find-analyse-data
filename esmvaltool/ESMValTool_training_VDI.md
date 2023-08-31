@@ -1,5 +1,5 @@
 # ACCESS-NRI 2023 Workshop Introduction to ESMValTool
-<p>Guide for the ILAMB ACCESS-NRI workshop exercises.</p>
+<p>Guide for the ESMValTool ACCESS-NRI workshop exercises.</p>
 
 ## Step 0: Pre-workshop
 Join the nf33, xp65, al33, rr3 and r87 projects  
