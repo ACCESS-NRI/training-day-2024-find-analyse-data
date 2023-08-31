@@ -7,7 +7,7 @@ We value your feedback on this training, in-person or via the <a href="https://f
 
 ## Structure of this repository (see <a href="https://www.access-nri.org.au/access-training-day-program/" target="_blank">Training Day program</a>)
 
-Instructions on how to launch the <a href="https://are.nci.org.au" target="_blank">ARE</a> (Australian Research Environment) are provided at the beginning of each exercise:
+Instructions on which NCI project you need to be part of and how to launch the <a href="https://are.nci.org.au" target="_blank">ARE</a> (Australian Research Environment) are provided at the beginning of each exercise:
 
 1. ACCESS Models:  
    a) [Exercise: Running ACCESS in ARE](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/access_rose_cylc/rose_cylc_example.md)  
@@ -18,6 +18,10 @@ Instructions on how to launch the <a href="https://are.nci.org.au" target="_blan
    b) [Example: How to index a new experiment](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/Intake_tutorial_p2.ipynb)
 3. [Exercise: Working with ILAMB](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/ilamb/ILAMB_training.md)
 4. [Exercise: Working with ESMValTOOL](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/esmvaltool/ESMValTool_training_VDI.md)
+
+Remember that you have to be part of the projects that are listed at the beginning of each exercise.
+
+Please <a href="https://my.nci.org.au/mancini/" target="_blank">join</a> them before the workshop - most importantly `nf33` - and list them in the storage instructions of your ARE session, as per exercise instructions.
 
 ## Cloning this repository
 
