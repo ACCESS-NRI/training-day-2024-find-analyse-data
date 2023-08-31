@@ -35,14 +35,23 @@ You will now be presented with the main VDI instance configuration form. Please 
 
 - *3.5* Click `Advanced options ...`
 
-<p align="center"><img src="../assets/ILAMB/pbsflag.png" alt="drawing" width="49%"/></p>
+- *3.6* **Module directories / Modules**: There are two primary `conda` environments that will be used in the tutorials, either `xp65` or `hh5`. Please note, this will not work unless you have both joined the project (Step 0) **and** added it to storage (Step 3.4).<br></br>
 
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image11.png" alt="drawing" width="50%"/></p>
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image12.png" alt="drawing" width="50%"/></p>
+
+- *3.7* **PBS Flags**
+The **xp65** conda environment is a containerised environment that requires the `SINGULARITY_OVERLAYIMAGE` environment variable to be defined.
+Copy and paste the following: `-v SINGULARITY_OVERLAYIMAGE=/g/data/xp65/public/apps/med_conda/envs/access-med-0.3.sqsh`
+in the **PBS Flags** field of the **advanced options** section:
+
+<p align="center"><img src="../assets/ILAMB/pbsflag.png" alt="drawing" width="60%"/></p>
 
 ## Step 4
 
 Once the VDI instance has started (this usually takes around 30 seconds) and this status window should update and look something like the following, reporting that the instance has started and the time remaining. More detailed information on the instance can be accessed by clicking the Session ID link.
 
- ![running](../assets/ILAMB/running.png)
+<p align="center"><img src="../assets/ILAMB/running.png" alt="drawing" width="60%"/></p>
 
 All that remains to get started is to click `Launch VDI Desktop`.
 
@@ -50,7 +59,8 @@ All that remains to get started is to click `Launch VDI Desktop`.
 ## Step 5
 Start a terminal in the VDI session.
 
-![](../assets/ILAMB/vdi_desktop.png)
+<p align="center"><img src="../assets/ILAMB/vdi_desktop.png" alt="drawing" width="60%"/></p>
+
 
 Then open a terminal, change the directory to your directory in this training section
 
@@ -65,7 +75,7 @@ In this directory, we need you to clone the whole repo from GitHub with the comm
 git clone https://github.com/ACCESS-NRI/workshop-training-2023.git
 ```
 
-![](../assets/ILAMB/gitclone.png)
+<p align="center"><img src="../assets/ILAMB/gitclone.png" alt="drawing" width="60%"/></p>
 
 Then you are all set to start the exercises.
 
@@ -80,14 +90,14 @@ Go to the `ilamb` directory. You will see everything we need to run ILAMB on NCI
 qsub run_ilamb.pbs
 ```
 
-![](../assets/ILAMB/runilamb.png)
+<p align="center"><img src="../assets/ILAMB/runilamb.png" alt="drawing" width="60%"/></p>
 
 ## Step 8
 
 After the process terminates, you can find details about the ILAMB running process in the output log file created by PBS.
 
-![](../assets/ILAMB/confront.png)
-![](../assets/ILAMB/post.png)
+<p align="center"><img src="../assets/ILAMB/confront.png" alt="drawing" width="60%"/></p>
+<p align="center"><img src="../assets/ILAMB/post.png" alt="drawing" width="60%"/></p>
 
 
 You should now see an `ilamb_result` directory which contains all the results created by ILAMB.
@@ -114,12 +124,12 @@ http://0.0.0.0:8000/
 In this training, we use two datasets as an example to show you how to use ILAMB.
 The output should look like this:
 
-![](../assets/ILAMB/ilamb_result.png)
+<p align="center"><img src="../assets/ILAMB/ilamb_result.png" alt="drawing"/></p>
 
 You can browse the output by clicking on the links:
 
-![](../assets/ILAMB/ilamb_result1.png)
-![](../assets/ILAMB/ilamb_result2.png)
+<p align="center"><img src="../assets/ILAMB/ilamb_result1.png" alt="drawing"/></p>
+<p align="center"><img src="../assets/ILAMB/ilamb_result2.png" alt="drawing"/></p>
 
 # End of Tutorial
 
