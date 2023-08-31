@@ -66,6 +66,13 @@ Once the VDI instance has started (this usually takes around 30 seconds) and thi
 
 All that remains to get started is to click `Launch VDI Desktop`.
 
+## Suggestion: Copy + paste from your local machine to VDI
+
+- click on the control bar in the center left of the VDI window
+- click on the clipboard: you can copy text from your local machine into this with the usual shortkeys
+- right-click and click *Paste* to paste the content in VDI
+
+<p align="center"><img src="../assets/ARE_setup_guide/vdi_copy_paste.png" alt="drawing" width="40%"/></p>
 
 ## Step 5
 Start a terminal in the VDI session.
