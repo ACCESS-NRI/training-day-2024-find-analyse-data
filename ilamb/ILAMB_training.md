@@ -36,7 +36,7 @@ The next step is to initialise the VDI before launching it.
 > 
 > in the **PBS Flags** field of the **advanced options** section:
 > 
-> ![PBSflag](./image/pbsflag.png)
+> ![./image/pbsflag.png](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/ilamb/image/pbsflag.png)
 
 It is similar to submitting a PBS job if you are familiar with it. In this part you just follow this picture to initialize your VDI environment, then click launch at the bottom.
 
