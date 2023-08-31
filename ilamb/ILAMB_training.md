@@ -16,7 +16,11 @@ After logging in, you will see the dashboard page.
 
 ![dashboard](./image/dashboard.png)
 
-ARE provides a range of applications. In this section, we will use a Virtual Desktop Instance (VDI)![VDI](./image/VDI.png)
+ARE provides a range of applications. In this section, we will use a **Virtual Desktop Instance (VDI)**:
+
+<p align="center">
+  <img src="./image/VDI.png" />
+</p>
 
 ## STEP 3
 
