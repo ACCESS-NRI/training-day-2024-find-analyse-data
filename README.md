@@ -66,7 +66,7 @@ This exercise will introduce you to <a href="https://www.esmvaltool.org/" target
 
 The training material includes
 - [a jupyter notebook introduction to ESMValTool](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/esmvaltool/Introduction_to_ESMValTool.ipynb) and
-- [a guide for ESMValTool on <i>Gadi</i>](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/esmvaltool/ESMValTool_training_VDI.md) that will walk you through the evaluation of models with a selected evaluation code recipe.
+- [an exercise for ESMValTool on <i>Gadi</i>](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/esmvaltool/ESMValTool_training_VDI.md) that will walk you through the evaluation of models with a selected evaluation code recipe.
 
 To run this exercise, you need to be a member of the following NCI projects:
 ```
