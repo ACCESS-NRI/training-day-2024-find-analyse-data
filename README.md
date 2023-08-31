@@ -42,7 +42,7 @@ The exercises are split in two parts to be run via an ARE JupyterLab session:
 
 2. [A jupyter notebook exercise](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/Intake_tutorial_p2.ipynb) to demonstrate how users can build Intake-ESM datastores for their ACCESS model runs using the access-nri-intake Python package.
 
-The ACCESS-NRI Intake Catalogue is currated by ACCESS-NRI with further information on its <a href="https://access-nri-intake-catalog.readthedocs.io/en/latest/index.html" target="_blank">documentation website</a> and <a href="https://access-hive.org.au/model_evaluation/model_evaluation_model_catalogs/" target="_blank">this ACCESS-Hive page</a>.
+The ACCESS-NRI Intake Catalogue is currated by ACCESS-NRI with further information on its <a href="https://access-nri-intake-catalog.readthedocs.io/en/latest/index.html" target="_blank">documentation website</a> and <a href="https://access-hive.org.au/model_evaluation/model_evaluation_model_catalogs" target="_blank">this ACCESS-Hive page</a>.
 
 ## 4. Model Evaluation with ILAMB (International Land Model Benchmarking)
 
@@ -62,13 +62,16 @@ Running ILAMB on <i>Gadi</i> is supported by ACCESS-NRI with further information
 
 ## 5. Model Evaluation with ESMValTool
 
-This exercise will introduce you to <a href="https://www.esmvaltool.org/" target="_blank">ESMValTool</a>, a tool to evaluate Earth System Models (ESMs) against observations like those available through the <a href="https://esgf.llnl.gov/nodes.html" target="_blank">Earth System Grid Federation (ESGF)</a>.
+This exercise will introduce you to <a href="https://www.esmvaltool.org/" target="_blank">ESMValTool</a>, a tool to evaluate Earth System Models (ESMs) against observations like those available through the <a href="https://esgf.llnl.gov/index.html" target="_blank">Earth System Grid Federation (ESGF)</a>.
 
-This exercise and its [training material](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/esmvaltool/Introduction_to_ESMValTool.ipynb) will walk you the evaluation of models by choosing one of the available code recipes.
+The training material includes a general [introduction to ESMValTool](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/esmvaltool/Introduction_to_ESMValTool.ipynb).
+
+This exercise and its [training material](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/esmvaltool/ESMValTool_training_VDI.md) will walk you the evaluation of models by choosing one of the available code recipes.
 
 To run this exercises, you need to be member of the following NCI projects:
 ```
 nf33, xp65, al33, rr3, r87
 ```
 
-Running ESMValTool on <i>Gadi</i> is supported by ACCESS-NRI with further information on <a href="https://access-hive.org.au/model_evaluation/model_evaluation_model_catalogs/" target="_blank">this ACCESS-Hive page</a> to supplement the <a href="https://docs.esmvaltool.org/en/latest/" target="_blank">official ESMValTool documentation</a>.
+
+Running ESMValTool on <i>Gadi</i> is supported by ACCESS-NRI with further information on <a href="https://access-hive.org.au/model_evaluation/model_evaluation_on_gadi/model_evaluation_on_gadi_esmvaltool/" target="_blank">this ACCESS-Hive page</a> to supplement the <a href="https://docs.esmvaltool.org/en/latest/" target="_blank">official ESMValTool documentation</a>.
