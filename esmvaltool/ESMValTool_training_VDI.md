@@ -119,10 +119,10 @@ Prompting this help command should produce the following output:
 
 ### Step 9: The configuration file
 
-In the next step, we want to have a look at the esmvaltool configuration file that we will use in this tutorial. You can use a text editor of your choice. In this tutorial, we use a text editor called `nano`:
+In the next step, we want to have a look at the esmvaltool configuration file that we will use in this tutorial. You can use a text editor of your choice. In this tutorial, we will simply print the content via `more`:
 
 ```bash
-nano config-user-on-gadi-v2.9.yml
+more config-user-on-gadi-v2.9.yml
 ```
 
 This file contains the information for:
@@ -216,10 +216,10 @@ Use the following command to copy the recipe to your working directory
 esmvaltool recipes get recipe_climwip_test_basic.yml
 ```
 
-Now you should see the recipe file in your working directory (type `ls` to verify). Use your text editor (e.g. nano) to open this file:
+Now you should see the recipe file in your working directory (type `ls` to verify). Use your text editor to open this file or display the contents via `more`:
 
 ```bash
-nano recipe_climwip_test_basic.yml
+more recipe_climwip_test_basic.yml
 ```
 Have a look at the recipe structure:
 
