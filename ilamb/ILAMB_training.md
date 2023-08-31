@@ -67,7 +67,11 @@ Then open a terminal, change the directory to your directory in this training se
 ```
 cd /scratch/nf33/$USER
 ```
-
+If you If you get the following error:'bash: cd: /scratch/nf33/$: No such file or directory',you will first need to create the directory with this 
+command:
+```
+mkdir /scratch/nf33/$USER
+```
 ## Step 6
 In this directory, we need you to clone the whole repo from GitHub with the command below (if you already have this repo in your directory, you can jump to STEP 7):
 
