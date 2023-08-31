@@ -2,13 +2,12 @@
 
 This repository includes the material for the <a href="https://www.access-nri.org.au" target="_black">ACCESS-NRI</a> Training Day on 4 September 2023.  
 You can find a general overview of the ACCESS-NRI documentation on the <a href="https://access-hive.org.au" target="_blank">ACCESS-Hive</a>.  
-You can find the program of the Training Day <a href="https://www.access-nri.org.au/access-training-day-program/" target="_blank">here</a>.  
 
-This reopository is structured according to the Training Day program:
+This reopository is structured according to the <a href="https://www.access-nri.org.au/access-training-day-program/" target="_blank">Training Day program</a>:
 
 1. [Launching ARE (Australian Research Environment)](#1-launching-are-australian-research-environment)  
 2. [Running ACCESS models and Rose/cylc in ARE](#2-running-access-and-rosecylc-in-are)  
-3. [Searching and Loading Models with Intake](#3-working-with-intake-catalogues)  
+3. [Finding and Loading Model Data with Intake](#3-finding-and-loading-model-data-with-intake)  
 4. [Model Evaluation with ILAMB (International Land Model Benchmarking)](#4-model-evaluation-with-ilamb-international-land-model-benchmarking)
 5. [Model Evaluation with ESMValTool](#5-model-evaluation-with-esmvaltool)
 
@@ -28,7 +27,7 @@ The [training material for this exercise](https://github.com/ACCESS-NRI/workshop
 
 This exercise and its [training material](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/access_rose_cylc/rose_cylc_example.md) will walk you through the setup of an [ACCESS Coupled Model 2 (ACCESS-CM2)](https://access-hive.org.au/models/configurations/access-cm/) model run.
 
-## 3. Searching and Loading Models with Intake
+## 3. Finding and Loading Model Data with Intake
 
 This exercise will introduce you to the ACCESS-NRI Intake Catalogue, a tool to provide a way for Python users to discover and load data across a broad range of climate data products available on Gadi.
 
