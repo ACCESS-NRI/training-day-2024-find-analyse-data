@@ -81,11 +81,6 @@ Then you are all set to start the exercises.
 
 ### Step 7: Move to the `esmvaltool` training directory
 
-Once VDI is started, you need to open a terminal (top left of the VDI screen):
-
-![Screenshot of the VDI window with a red arrow pointing towards the button to open a new Terminal.](../assets/ESMValTool/vdi_start.png)
-
-
 In the terminal, prompt:
 ```bash
 cd /scratch/nf33/$USER/workshop-training-2023/esmvaltool
