@@ -31,7 +31,7 @@ You will now be presented with the main JupyterLab instance configuration form. 
 
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image5.png" alt="drawing" width="50%"/></p>
 
-- *3.4* **Storage**: This is the list of `/g/data/` project data storage locations required to complete the workshop tutorials. In ARE, storage locations need to be explicitly defined to access these data from within a JupyterLab instance. Please enter the following string listing the projects mentioned in **Step 0** above: `scratch/nf33+gdata/xp65+gdata/hh5+gdata/dk92+gdata/fs38+gdata/p73`.
+- *3.4* **Storage**: This is the list of project data storage locations required to complete the workshop tutorials. In ARE, storage locations need to be explicitly defined to access these data from within a JupyterLab instance. Please enter the following string listing the projects mentioned in **Step 0** above: `scratch/nf33+gdata/xp65+gdata/hh5+gdata/dk92+gdata/fs38+gdata/p73`.
 
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image6_intake.png" alt="drawing" width="50%"/></p>
 
@@ -44,7 +44,7 @@ You will now be presented with the main JupyterLab instance configuration form. 
 
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image8.png" alt="drawing" width="49%"/></p>
 
-- *3.7* **Module directories / Modules**: There are two pubic `conda` environments that can be used to run the tutorials, available in the projects `hh5` or `xp65`. Enter `/g/data/hh5/public/modules` into the **Module directories** field and `conda/analysis3-unstable` into the **Modules** field to use the [hh5 conda environment](http://climate-cms.wikis.unsw.edu.au/Conda#Conda_Python_Environments) (alternatively, you could use the `xp65` environment by entering `/g/data/xp65/public/modules` and `conda/access-med`, respectively). Please note, this will not work unless you have both joined the project **and** added it to storage (Step 3.4).<br></br>
+- *3.7* **Module directories / Modules**: There are two pubic `conda` environments that provide the software packages needed to run the tutorials, available in the projects `hh5` or `xp65`. Enter `/g/data/hh5/public/modules` into the **Module directories** field and `conda/analysis3-unstable` into the **Modules** field to use the [hh5 conda environment](http://climate-cms.wikis.unsw.edu.au/Conda#Conda_Python_Environments) (alternatively, you could use the `xp65` environment by entering `/g/data/xp65/public/modules` and `conda/access-med`, respectively). Please note, this will not work unless you have both joined the project **and** added it to storage (Step 3.4).<br></br>
 
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image9.png" alt="drawing" width="50%"/></p>
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image10.png" alt="drawing" width="50%"/></p>

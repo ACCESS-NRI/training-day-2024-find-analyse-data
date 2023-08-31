@@ -14,10 +14,11 @@ Instructions on which NCI project you need to be part of and how to launch the <
    b) [Exercise: Working with an ACCESS suite](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/access_rose_cylc/rose_cylc_example.md)  
    c) [Exercise: How to modify suites](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/access_rose_cylc/rose_cylc_example.md)
 2. ACCESS-NRI Intake Catalog:  
-   a) [Exercise: Using the ACCESS-NRI intake catalog](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/Intake_tutorial_p1.ipynb)  
-   b) [Example: How to index a new experiment](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/Intake_tutorial_p2.ipynb)
+   a) [Exercise: Getting set up on the ARE](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/ARE_setup_guide.md)
+   b) [Exercise: Using the ACCESS-NRI Intake catalog](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/Intake_tutorial_p1.ipynb)
+   c) [Exercise: Indexing a new model run](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/Intake_tutorial_p2.ipynb)
 3. [Exercise: Working with ILAMB](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/ilamb/ILAMB_training.md)
-4. [Exercise: Working with ESMValTOOL](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/esmvaltool/ESMValTool_training_VDI.md)
+4. [Exercise: Working with ESMValTool](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/esmvaltool/ESMValTool_training_VDI.md)
 
 Remember that you have to be part of the projects that are listed at the beginning of each exercise.
 
