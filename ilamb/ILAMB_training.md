@@ -13,12 +13,12 @@ nf33, xp65, hh5, ct11, oi10, fs38
 ## Step 1:
 Go to the [Australian Research Environment](https://are.nci.org.au/) website and login with your **NCI username and password**. If you don't have an NCI account, you can sign up for one at the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/).
 
-<p align="center"><img src="../assets/ARE_setup_guide/setup_image1.png" alt="drawing"/></p>
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image1.png" alt="drawing" width="50%"/></p>
 
 ## Step 2:
 Click on `Virtual Desktop` under *Featured Apps* to configure a new VDI instance. This option is also available under the *All Apps* section at the bottom of the page and the *Interactive Apps* dropdown located in the top menu.
 
-<p align="center"><img src="../assets/access_rose_cylc/setup_vdi1.png" alt="drawing" width="50%"/></p>
+<p align="center"><img src="../assets/access_rose_cylc/setup_vdi1.png" alt="drawing"/></p>
 
 ## Step 3:
 You will now be presented with the main VDI instance configuration form. Please complete **only** the fields below - leave all other fields blank or to their default values.
