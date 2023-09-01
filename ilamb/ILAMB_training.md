@@ -18,7 +18,7 @@ Go to the [Australian Research Environment](https://are.nci.org.au/) website and
 ## Step 2:
 Click on `Virtual Desktop` under *Featured Apps* to configure a new VDI instance. This option is also available under the *All Apps* section at the bottom of the page and the *Interactive Apps* dropdown located in the top menu.
 
-![dashboard](../assets/ILAMB/dashboard.png)
+<p align="center"><img src="../assets/access_rose_cylc/setup_vdi1.png" alt="drawing"/></p>
 
 ## Step 3:
 You will now be presented with the main VDI instance configuration form. Please complete **only** the fields below - leave all other fields blank or to their default values.
