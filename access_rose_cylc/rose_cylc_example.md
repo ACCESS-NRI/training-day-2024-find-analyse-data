@@ -2,8 +2,10 @@
 <p>Guide for the rose cylc ACCESS-NRI workshop exercises.</p>
 
 ## Step 0: Pre-workshop
-Join the access, hh5, hr22 and ki32 projects
-
+To run this exercise, you need to be a member of the following NCI projects:
+```
+hh5, hr22 and ki32
+```
 Exercises will still work if you do not have a MOSRS account
 
 ## Step 1:
@@ -33,8 +35,10 @@ You will now be presented with the main VDI instance configuration form. Please 
 
 <p align="center"><img src="../assets/access_rose_cylc/setup_image6.png" alt="drawing" width="50%"/></p>
 
-- *3.4* **Storage**: This is the list of `/g/data/` project data storage locations required to complete the workshop tutorials. In ARE, storage locations need to be explicitly defined to access these data from within a VDI instance. Please enter the following string listing the projects mentioned in **Step 0** above: `gdata/access+gdata/hh5+gdata/hr22+gdata/ki32`.
-
+- *3.4* **Storage**: This is the list of `/g/data/` project data storage locations required to complete the workshop tutorials. In ARE, storage locations need to be explicitly defined to access these data from within a VDI instance. Please enter the following string listing the projects mentioned in **Step 0** above:
+```
+gdata/access+gdata/hh5+gdata/hr22+gdata/ki32
+```
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image7.png" alt="drawing" width="50%"/></p>
 
 - *3.5* Click `Advanced options ...`

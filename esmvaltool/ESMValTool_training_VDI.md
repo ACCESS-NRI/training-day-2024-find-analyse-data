@@ -20,7 +20,7 @@ Go to the [Australian Research Environment](https://are.nci.org.au/) website and
 ## Step 2:
 Click on `Virtual Desktop` under *Featured Apps* to configure a new VDI instance. This option is also available under the *All Apps* section at the bottom of the page and the *Interactive Apps* dropdown located in the top menu.
 
-<p align="center"><img src="../assets/ILAMB/dashboard.png" alt="drawing" width="50%"/></p>
+<p align="center"><img src="../assets/access_rose_cylc/setup_vdi1.png" alt="drawing" width="50%"/></p>
 
 ## Step 3:
 You will now be presented with the main VDI instance configuration form. Please complete **only** the fields below - leave all other fields blank or to their default values.
@@ -54,15 +54,13 @@ Copy and paste the following:
 ```
 in the **PBS Flags** field of the **advanced options** section:
 
-<p align="center"><img src="../assets/ILAMB/pbsflag.png" alt="drawing" width="60%"/></p>
-
-- *3.7* Click on the **Launch** button
+<p align="center"><img src="../assets/ILAMB/pbsflag.png" alt="drawing" width="50%"/></p>
 
 ## Step 4
 
 Once the VDI instance has started (this usually takes around 30 seconds) and this status window should update and look something like the following, reporting that the instance has started and the time remaining. More detailed information on the instance can be accessed by clicking the Session ID link.
 
-<p align="center"><img src="../assets/ILAMB/running.png" alt="drawing" width="60%"/></p>
+<p align="center"><img src="../assets/ILAMB/running.png" alt="drawing" width="50%"/></p>
 
 All that remains to get started is to click `Launch VDI Desktop`.
 
@@ -72,7 +70,7 @@ All that remains to get started is to click `Launch VDI Desktop`.
 - click on the clipboard: you can copy text from your local machine into this with the usual shortkeys
 - right-click and click *Paste* to paste the content in VDI
 
-<p align="center"><img src="../assets/ARE_setup_guide/vdi_copy_paste.png" alt="drawing" width="40%"/></p>
+<p align="center"><img src="../assets/ARE_setup_guide/vdi_copy_paste.png" alt="drawing" width="50%"/></p>
 
 ## Step 5
 Start a terminal in the VDI session.
