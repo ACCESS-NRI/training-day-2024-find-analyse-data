@@ -1,23 +1,108 @@
-# ACCESS-NRI ESMValTool Introduction
+# ACCESS-NRI 2023 Workshop Introduction to ESMValTool
 
-## Preparation
+This exercise will introduce you to <a href="https://www.esmvaltool.org/" target="_blank">ESMValTool</a>, a tool to evaluate Earth System Models (ESMs) against observations like those available through the <a href="https://esgf.llnl.gov/index.html" target="_blank">Earth System Grid Federation (ESGF)</a>.
 
-For this tutorial, we will use the VDI option of the [Australian Research Environment (ARE)](https://are.nci.org.au/). To get the VDI started, you need to follow the [ARE Setup Guide](../ARE_setup_guide.md), including the cloning of the `workshop-training-2023` material into your `scratch/nf33/$USER` directory.
+In this document, we will use the **Virtual Desktop Infrastructure (VDI)**. We also provide an adjusted Jupyter version [for advanced users of ESMValTool](./Introduction_to_ESMValTool.ipynb).
 
-Once VDI is started, you need to open a terminal (top left of the VDI screen):
+Running ESMValTool on <i>Gadi</i> is supported by ACCESS-NRI with further information on <a href="https://access-hive.org.au/model_evaluation/model_evaluation_on_gadi/model_evaluation_on_gadi_esmvaltool/" target="_blank">this ACCESS-Hive page</a> to supplement the <a href="https://docs.esmvaltool.org/en/latest/" target="_blank">official ESMValTool documentation</a>.
 
-![Screenshot of the VDI window with a red arrow pointing towards the button to open a new Terminal.](../assets/ESMValTool/vdi_start.png)
+## Step 0: Pre-workshop
+To run this exercise, you need to be a member of the following NCI projects:
+```
+nf33, xp65, al33, rr3, r87
+```
 
-## ESMValTool command line tool
+## Step 1:
+Go to the [Australian Research Environment](https://are.nci.org.au/) website and login with your **NCI username and password**. If you don't have an NCI account, you can sign up for one at the [NCI website](https://my.nci.org.au/mancini/login?next=/mancini/).
 
-### Step 0: Move to the `esmvaltool` training directory
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image1.png" alt="drawing" width="50%"/></p>
+
+## Step 2:
+Click on `Virtual Desktop` under *Featured Apps* to configure a new VDI instance. This option is also available under the *All Apps* section at the bottom of the page and the *Interactive Apps* dropdown located in the top menu.
+
+<p align="center"><img src="../assets/access_rose_cylc/setup_vdi1.png" alt="drawing" width="50%"/></p>
+
+## Step 3:
+You will now be presented with the main VDI instance configuration form. Please complete **only** the fields below - leave all other fields blank or to their default values.
+
+- *3.1* **Walltime**: The number of hours the VDI instance will run. `1` hour is sufficient for each of the tutorials.
+
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image3.png" alt="drawing" width="50%"/></p>
+
+- *3.2* **Compute Size**: Select `small` from the dropdown menu.
+
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image4.png" alt="drawing" width="50%"/></p>
+
+- *3.3* **Project**: Please enter `nf33`. This will allocate SU usage to the workshop project.
+
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image5.png" alt="drawing" width="50%"/></p>
+
+- *3.4* **Storage**: This is the list of `/g/data/` project data storage locations required to complete the workshop tutorials. In ARE, storage locations need to be explicitly defined to access these data from within a VDI instance. Please enter the following string:
+```
+gdata/nf33+gdata/xp65
+```
+
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image6_1.png" alt="drawing" width="50%"/></p>
+
+- *3.5* Click `Advanced options ...`
+
+- *3.6* **PBS Flags**
+The **xp65** conda environment is a containerised environment that requires the `SINGULARITY_OVERLAYIMAGE` environment variable to be defined.
+Copy and paste the following:
+```
+-v SINGULARITY_OVERLAYIMAGE=/g/data/xp65/public/apps/med_conda/envs/access-med-0.3.sqsh
+```
+in the **PBS Flags** field of the **advanced options** section:
+
+<p align="center"><img src="../assets/ILAMB/pbsflag.png" alt="drawing" width="50%"/></p>
+
+## Step 4
+
+Once the VDI instance has started (this usually takes around 30 seconds) and this status window should update and look something like the following, reporting that the instance has started and the time remaining. More detailed information on the instance can be accessed by clicking the Session ID link.
+
+<p align="center"><img src="../assets/ILAMB/running.png" alt="drawing" width="50%"/></p>
+
+All that remains to get started is to click `Launch VDI Desktop`.
+
+## Suggestion: Copy + paste from your local machine to VDI
+
+- click on the control bar in the center left of the VDI window
+- click on the clipboard: you can copy text from your local machine into this with the usual shortkeys
+- right-click and click *Paste* to paste the content in VDI
+
+<p align="center"><img src="../assets/ARE_setup_guide/vdi_copy_paste.png" alt="drawing" width="50%"/></p>
+
+## Step 5
+Start a terminal in the VDI session.
+
+<p align="center"><img src="../assets/ILAMB/vdi_desktop.png" alt="drawing" width="60%"/></p>
+
+
+Then open a terminal, change the directory to your directory in this training section
+
+```
+cd /scratch/nf33/$USER
+```
+
+## Step 6
+In this directory, we need you to clone the whole repo from GitHub with the command below (if you already have this repo in your directory, you can jump to STEP 7):
+
+```
+git clone https://github.com/ACCESS-NRI/workshop-training-2023.git
+```
+
+<p align="center"><img src="../assets/ILAMB/gitclone.png" alt="drawing" width="60%"/></p>
+
+Then you are all set to start the exercises.
+
+### Step 7: Move to the `esmvaltool` training directory
 
 In the terminal, prompt:
 ```bash
 cd /scratch/nf33/$USER/workshop-training-2023/esmvaltool
 ```
 
-### Step 1: Check the ESMValTool environment by accessing the help for ESMValTool
+### Step 8: Check the ESMValTool environment by accessing the help for ESMValTool
 
 ```bash
 module use /g/data/xp65/public/modules
@@ -30,12 +115,12 @@ Prompting this help command should produce the following output:
 
 ![Screenshot of the terminal when prompting esmvalltool with the help argument](../assets/ESMValTool/esmvaltool_help.png)
 
-### Step 2: The configuration file
+### Step 9: The configuration file
 
-In the next step, we want to have a look at the esmvaltool configuration file that we will use in this tutorial. You can use a text editor of your choice. In this tutorial, we use a text editor called `nano`:
+In the next step, we want to have a look at the esmvaltool configuration file that we will use in this tutorial. You can use a text editor of your choice. In this tutorial, we will simply print the content via `more`:
 
 ```bash
-nano config-user-on-gadi-v2.9.yml
+more config-user-on-gadi-v2.9.yml
 ```
 
 This file contains the information for:
@@ -111,7 +196,7 @@ drs:
   CMIP5: BADC
 ```
 
-## Step 3: The ESMValTool recipe
+## Step 10: The ESMValTool recipe
 
 To see all the recipes that are shipped with ESMValTool, type
 
@@ -129,10 +214,10 @@ Use the following command to copy the recipe to your working directory
 esmvaltool recipes get recipe_climwip_test_basic.yml
 ```
 
-Now you should see the recipe file in your working directory (type `ls` to verify). Use your text editor (e.g. nano) to open this file:
+Now you should see the recipe file in your working directory (type `ls` to verify). Use your text editor to open this file or display the contents via `more`:
 
 ```bash
-nano recipe_climwip_test_basic.yml
+more recipe_climwip_test_basic.yml
 ```
 Have a look at the recipe structure:
 
@@ -141,7 +226,40 @@ Have a look at the recipe structure:
 - Preprocessors groups of common preprocessing steps
 - Diagnostics scripts performing more specific evaluation steps
 
-## Step 3: Run a recipe inside a PBS Job
+## Climate model Weighting by Independence and Performance (ClimWIP)
+
+Projections of future climate change are often based on multi-model
+ensembles of global climate models such as CMIP6. To condense the
+information from these models they are often combined into
+probabilistic estimates such as mean and a related uncertainty range
+(such as the standard deviation). However, not all models in a given
+multi-model ensemble are always equally fit for purpose and it can
+make sense to weight models based on their ability to simulate
+observed quantities related to the target. In addition, multi-model
+ensembles, such as CMIP can contain several models based on a very
+similar code base (sharing of components, only differences in
+resolution, etc.) leading to complex inter-dependencies between the
+models. Adjusting for this by weighting models according to their
+independence helps to adjust for this.
+
+
+This recipe implements the **Climate model Weighting by Independence and Performance
+(ClimWIP)** method. It is based on work by [Knutti et al. (2017)](https://doi.org/10.1002/2016GL072012),
+[Lorenz et al. (2018)](https://doi.org/10.1029/2017JD027992),
+[Brunner et al. (2019)](https://doi.org/10.1088/1748-9326/ab492f),
+[Merrifield et al. (2020)](https://doi.org/10.5194/esd-11-807-2020),
+[Brunner et al. (2020)](https://doi.org/10.5194/esd-11-995-2020). Weights are
+calculated based on historical model performance in several metrics (which can be
+defined by the ``performance_contributions`` parameter) as well as by their independence
+to all the other models in the ensemble based on their output fields in several metrics
+(which can be defined by the ``independence_contributions`` parameter). These weights
+can be used in subsequent evaluation scripts (some of which are implemented as part of
+this diagnostic).
+
+**Note**: This recipe is still being developed! A more comprehensive (yet older)
+implementation can be found on GitHub:  https://github.com/lukasbrunner/ClimWIP
+
+## Step 11: Run a recipe inside a PBS Job
 
 Because of the computational costs, we will submit a job to Gadi through the Portable Batch System. To do so, you need to use a submission script, for example the one that we already provide. Open the `launch_recipe_climwip_test_basic.pbs` file:
 
@@ -176,7 +294,7 @@ To monitor the progress, you can use the status prompt for the job ID
 qstat
 ```
 
-## Step 4: Investigating the log messages
+## Step 12: Investigating the log messages
 
 Once the job is finished, you can open the log message (`recipe_climwip_test_basic.o*`) and check a few things:
 
@@ -188,7 +306,7 @@ After the banner and general information, the output starts with some important 
 - Can you guess what the different output directories are for?
 - ESMValTool creates two log files. What is the difference?
 
-## Step 5: Visualise outputs with a VDI
+## Step 13: Visualise outputs with a VDI
 
 Open a new terminal (top left of the VDI screen) and navigate to the `esmvaltool_output` directory, them use the commmand below to start a local  HTTP server.
 
@@ -210,3 +328,9 @@ From there you can navigate to through the different directories to show the dif
 ![Screenshot of the VDI browser window showing results of the ESMValTool comparison](../assets/ESMValTool/esmvaltool_results_2.png)
 
 ![Screenshot of the VDI browser window showing results of the ESMValTool comparison](../assets/ESMValTool/esmvaltool_results_3.png)
+
+## Step 14: Close servers and VDI session
+
+- Close the browser window
+- Close the `http` server by prompting `ctrl+C` in the terminal, then prompt `exit` to close the terminal
+- In the menu bar (top left), click on `System` and then `Log Out` and close the browser tab or delete the session in *My Interactive Sessions* of the ARE

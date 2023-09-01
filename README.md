@@ -1,68 +1,45 @@
-# ACCESS-NRI Workshop 2023
-ACCESS NRI Workshop 2023: Model Evaluation Training
+# ACCESS-NRI Training Day 4 September 2023
 
-## Introduction to the ACCESS-NRI Intake catalog
+This repository includes the material for the <a href="https://www.access-nri.org.au" target="_black">ACCESS-NRI</a> <a href="https://www.access-nri.org.au/event/access-training-day-2023/" target="_black">Training Day</a> on 4 September 2023.  
+You can find a general overview of the ACCESS-NRI documentation on the <a href="https://access-hive.org.au" target="_blank">ACCESS-Hive</a>.  
 
-Projects required:
-```
-dk92, fs38, p73, xp65, hh5 (optional)
-```
+We value your feedback on this training, in-person or via the <a href="https://forum.access-hive.org.au/" target="_blank">ACCESS-Hive Forum</a>, as it will help us to provide better training and documentation for the ACCESS community on our documentation portal, <a href="https://access-hive.org.au" target="_blank">ACCESS-Hive</a>.
 
-## Introduction to ILAMB
+## Structure of this repository (see <a href="https://www.access-nri.org.au/access-training-day-program/" target="_blank">Training Day program</a>)
 
-Project required(data):
-```
-xp65, hh5, ct11, oi10, fs38 
-```
-#### Model-result dataset required:
-```
-ACCESS_ESM1-5_r1i1p1f1,
-BCC-ESM1_r1i1p1f1,
-CanESM5_r1i1p1f1
-```
-#### Approximate wall time usage:
+Instructions on which NCI project you need to be part of and how to launch the <a href="https://are.nci.org.au" target="_blank">ARE</a> (Australian Research Environment) are provided at the beginning of each exercise:
 
-10-12 mins by 16 processes and 28 cpus and 128G mem(xx-large)
+1. ACCESS Models:  
+   a) [Exercise: Running ACCESS in ARE](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/access_rose_cylc/rose_cylc_example.md)  
+   b) [Exercise: Working with an ACCESS suite](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/access_rose_cylc/rose_cylc_example.md)  
+   c) [Exercise: How to modify suites](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/access_rose_cylc/rose_cylc_example.md)
+2. ACCESS-NRI Intake Catalog:  
+   a) [Exercise: Getting set up on the ARE](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/ARE_setup_guide.md)  
+   b) [Exercise: Using the ACCESS-NRI Intake catalog](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/Intake_tutorial_p1.ipynb)  
+   c) [Exercise: Indexing a new model run](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/Intake_tutorial_p2.ipynb)
+4. [Exercise: Working with ILAMB](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/ilamb/ILAMB_training.md)
+5. [Exercise: Working with ESMValTool](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/esmvaltool/ESMValTool_training_VDI.md)
 
-arround 15 mins by 10 processes and 14 cpus and 63G mem(x-large)
+Remember that you have to be part of the projects that are listed at the beginning of each exercise.
 
-#### Results
-Results can be viewed at `/g/data/kj13/admin/ILAMB/script_github_ilamb/2023-workshop/ilamb_result/_build`
+Please <a href="https://my.nci.org.au/mancini/" target="_blank">join</a> them before the workshop - most importantly `nf33` - and list them in the storage instructions of your ARE session, as per exercise instructions.
 
-## Introduction to ESMValTool
+## Cloning this repository
 
-Learn to analyze Earth System Model data from a Jupyter Notebook with [ESMValTool](https://docs.esmvaltool.org)
+For the training on Intake, ILAMB and ESMValTool, you will need to clone a local copy of this repo to <i>Gadi</i> as follows: 
 
+1. Log in to <i>Gadi</i> via the command line of your preferred terminal using your NCI username and password.
 
-Project required(data):
-```
-xp65, al33, rr3, r87
-```
+   ```bash
+   ssh <your_nci_username>@gadi.nci.org.au
+   ```
 
+   For example, you could use the **Gadi Terminal** app provided after logging in to the <a href="https://are.nci.org.au" target="_blank">ARE</a>.
+   
+2. Clone this Github repo to your user directory within `/scratch/nf33` on <i>Gadi</i>. Depending on whether or not you've used the nf33 project before, your user directory may or may not already exist.
 
-## Course material
-
-### ARE log-in page at NCI
-
-https://are.nci.org.au
-
-### Reference
-
-- [ESMValTool Documentation](https://docs.esmvaltool.org/en/latest/)
-- [ESMValTool Website](https://www.esmvaltool.org/)
-- [ESMValTool Tutorial](https://esmvalgroup.github.io/ESMValTool_Tutorial/index.html)
-- [ESMValGroup Project on GitHub](https://github.com/ESMValGroup)
-- [ESMValTool Available Recipes](https://docs.esmvaltool.org/en/latest/recipes/index.html)
-- [How to Cite ESMValTool](https://www.esmvaltool.org/references.html)
-- [ESGF Nodes](https://esgf.llnl.gov/nodes.html)
-
-## Running the notebooks
-
-*During the short course, you will receive instructions on how to run the notebook.*
-
-If you would like continue using ESMValTool after the course, you can use the instructions available here to start the notebook.
-
-## Gadi at NCI
-
-1. Go to https://are.nci.org.au and log in
-
+   ```bash
+   mkdir -p /scratch/nf33/$USER
+   cd /scratch/nf33/$USER
+   git clone https://github.com/ACCESS-NRI/workshop-training-2023.git
+   ```
