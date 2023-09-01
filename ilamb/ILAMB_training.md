@@ -45,7 +45,10 @@ You will now be presented with the main VDI instance configuration form. Please 
 
 - *3.6* **PBS Flags**
 The **xp65** conda environment is a containerised environment that requires the `SINGULARITY_OVERLAYIMAGE` environment variable to be defined.
-Copy and paste the following: `-v SINGULARITY_OVERLAYIMAGE=/g/data/xp65/public/apps/med_conda/envs/access-med-0.3.sqsh`
+Copy and paste the following:
+
+`-v SINGULARITY_OVERLAYIMAGE=/g/data/xp65/public/apps/med_conda/envs/access-med-0.3.sqsh`
+
 in the **PBS Flags** field of the **advanced options** section:
 
 <p align="center"><img src="../assets/ILAMB/pbsflag.png" alt="drawing" width="60%"/></p>
