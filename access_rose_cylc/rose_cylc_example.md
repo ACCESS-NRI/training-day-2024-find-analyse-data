@@ -72,6 +72,7 @@ If you have a MOSRS account
 mosrs-auth
 rosie co u-cz168
 ```
+This checks out a copy of the suite to `~/roses/u-cz168`.
 
 If you do not have a MOSRS account
 ```
@@ -96,6 +97,17 @@ The model output and log files can be checked directly on the file system. E.g.
 <p align="center"><img src="../assets/access_rose_cylc/suite_output_files.png" alt="drawing" width="80%"/></p>
 
 Note that for suites launched from ARE, the whole `cylc-run/SUITE` directory is on `/scratch`, not just the `work` and `share` subdirectories.
+
+## Model run directory
+Tasks run in a `work/CYCLE_TIME/TASK_NAME` subdirectory and by default input and output files will be there. This list shows the model run directory while it is in progress (before the post-processing moves files)
+
+<p align="center"><img src="../assets/access_rose_cylc/work_files.png" alt="drawing" width="80%"/></p>
+
+`ATMOSCNTL` is a model namelist, created from the suite `app/um/rose-app.conf` file.
+
+`cz168a.da19820102_00` is the restart file written at the end of the first day.
+
+`cz168a.pd19820101` is a UM diagnostic (STASH) file.
 
 ## Model output
 This section describes the archive strategy used by ACCESS-CM2. Other models will have a different style for both naming and saving files.
