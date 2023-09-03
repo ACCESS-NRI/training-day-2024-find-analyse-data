@@ -12,7 +12,7 @@ Instructions on which NCI project you need to be part of and how to launch the <
 1. ACCESS Models:  
    a) [Exercise: Running ACCESS in ARE](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/access_rose_cylc/rose_cylc_example.md)  
    b) [Exercise: Working with an ACCESS suite](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/access_rose_cylc/ex1_runlength.md)  
-   c) [Exercise: How to modify suites](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/access_rose_cylc/ex2_co2.md)
+   c) [Exercise: How to modify suites](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/access_rose_cylc/ex2_co2.md) <br>
    d) [Exercise: Troubleshooting example](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/access_rose_cylc/ex3_troubleshooting.md)
 3. ACCESS-NRI Intake Catalog:  
    a) [Exercise: Getting set up on the ARE](https://github.com/ACCESS-NRI/workshop-training-2023/blob/main/intake/ARE_setup_guide.md)  
