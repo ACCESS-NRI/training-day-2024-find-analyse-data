@@ -206,7 +206,7 @@ esmvaltool recipes list
 
 ![Collage of screenshots of the terminal window when printing the available ESMValTool recipes list on Gadi.](../assets/ESMValTool/esmvaltool_recipe_list.png)
 
-For this tutorial, we will choose `recipe_climwip_test_basic.yml` as an example recipe.
+For this tutorial, we will choose `recipe_climwip_test_basic.yml` as an example recipe. ACCESS-NRI is working on supporting all the above recipes on NCI. You can check the current support status [here](https://github.com/ACCESS-NRI/ESMValTool-workflow).
 
 Use the following command to copy the recipe to your working directory
 
