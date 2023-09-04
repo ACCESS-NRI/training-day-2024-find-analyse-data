@@ -27,7 +27,7 @@ You will now be presented with the main VDI instance configuration form. Please 
 
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image3.png" alt="drawing" width="50%"/></p>
 
-- *3.2* **Compute Size**: Select `small` from the dropdown menu.
+- *3.2* **Compute Size**: Select `small(2 cpus, 9 mem)` from the dropdown menu.
 
 <p align="center"><img src="../assets/ARE_setup_guide/setup_image4.png" alt="drawing" width="50%"/></p>
 
