@@ -3,7 +3,7 @@
 
 This exercise will walk you through the evaluation of models and confrontation with observational data using the <a href="https://www.ilamb.org/" target="_blank">International Land Model Benchmarking (ILAMB)</a>.
 
-You can find documentation on ILAMB support on NCI from ACCESS-NRI [here](https://ilamb-workflow.readthedocs.io/en/latest/?badge=latest)
+You can find documentation about ILAMB support on NCI from ACCESS-NRI [here](https://ilamb-workflow.readthedocs.io/en/latest/?badge=latest)
 
 ## Step 0: Pre-workshop
 
