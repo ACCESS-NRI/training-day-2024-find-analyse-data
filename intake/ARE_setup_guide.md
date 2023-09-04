@@ -19,9 +19,9 @@ Click on `JupyterLab` under *Featured Apps* to configure a new JupyterLab instan
 ## Step 3:
 You will now be presented with the main JupyterLab instance configuration form. Please complete **only** the fields below - leave all other fields blank or to their default values.
 
-- *3.1* **Walltime**: The number of hours the JupyterLab instance will run. `1` hour is sufficient for the Intake tutorials.
+- *3.1* **Walltime**: The number of hours the JupyterLab instance will run. `2` hour is sufficient for the Intake tutorials.
 
-<p align="center"><img src="../assets/ARE_setup_guide/setup_image3.png" alt="drawing" width="50%"/></p>
+<p align="center"><img src="../assets/ARE_setup_guide/setup_image3_intake.png" alt="drawing" width="50%"/></p>
 
 - *3.2* **Compute Size**: Select `Large (7 cpus, 32G mem)` from the dropdown menu.
 
