@@ -7,7 +7,7 @@ This exercise will walk you through the evaluation of models and confrontation w
 
 To run this exercise, you need to be a member of the following NCI projects:
 ```
-nf33, xp65, hh5, ct11, oi10, fs38 
+nf33, xp65, hh5(optional), ct11, oi10, fs38 
 ```
 
 ## Step 1:
