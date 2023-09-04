@@ -77,7 +77,7 @@ This checks out a copy of the suite to `~/roses/u-cz168`.
 If you do not have a MOSRS account
 ```
 mkdir -p ~/roses
-cp-r /g/data/access/nri_training/u-cz168 ~/roses
+cp -r /g/data/access/nri_training/u-cz168 ~/roses
 ```
 
 This example is a ACCESS-CM2 like AMIP (atmosphere only) suite, but uses lower horizontal resolution and runs a day at a time rather than 6 months at a time.
