@@ -15,7 +15,7 @@ Instructions on which NCI project you need to be part of and how to launch the <
    b) [Extra Reference Material: Indexing a new model run](intake/Intake_tutorial_p2.ipynb)
 
 
-Please <a href="https://my.nci.org.au/mancini/" target="_blank">join xp65, dk92, fs38, hh5 and p73 projects</a> before the workshop - and list them in the storage instructions of your ARE session, per details below.
+Please <a href="https://my.nci.org.au/mancini/" target="_blank">join xp65, dk92, fs38, hh5, ik11, cj50 and p73 projects</a> before the workshop - and list them in the storage instructions of your ARE session, per details below.
 
 ## Cloning this repository
 
@@ -40,7 +40,7 @@ For this training on Intake, you will need to clone a local copy of this repo to
 You can now start a JupyterLab session using the `nf33` project for compute resources and connecting to other projects for dependencies and data. There are instructions below for doing this using <a href="https://are.nci.org.au" target="_blank">ARE</a> but feel free to use your preferred method.
 
 ## Step 0: Pre-requisites
-You should have already joined the following NCI projects: `xp65`, `hh5`, `dk92`, `fs38` and `p73`. If this is not the case, please talk to a helper.
+You should have already joined the following NCI projects: `xp65`, `hh5`, `dk92`, `fs38`, `ik11`, `cj50` and `p73`. If this is not the case, please talk to a helper.
 
 ## Step 1:
 Go to the [ARE](https://are.nci.org.au/) website and log in with your **NCI username and password**.
@@ -73,16 +73,12 @@ You will now be presented with the main JupyterLab instance configuration form. 
 
 - *3.5* Click _Advanced options ..._
 
-- *3.6* **Extra arguments**: By default, the working directory of your JupyterLab instance will be your home directory. You can add an extra argument to set the working directory to your user directory, (e.g `--notebook-dir=/g/data/nf33/$USER`).
-
-<p align="center"><img src="assets/ARE_setup_guide/setup_image8.png" alt="drawing" width="49%"/></p>
-
-- *3.7* **Module directories / Modules**: There are two pubic `conda` environments that provide the software packages needed to run the tutorials, available in the projects `hh5` or `xp65`. Enter `/g/data/hh5/public/modules` into the **Module directories** field and `conda/analysis3` into the **Modules** field to use the [hh5 conda environment](http://climate-cms.wikis.unsw.edu.au/Conda#Conda_Python_Environments) <br></br>
+- *3.6* **Module directories / Modules**: There are two pubic `conda` environments that provide the software packages needed to run the tutorials, available in the projects `hh5` or `xp65`. Enter `/g/data/hh5/public/modules` into the **Module directories** field and `conda/analysis3` into the **Modules** field to use the [hh5 conda environment](http://climate-cms.wikis.unsw.edu.au/Conda#Conda_Python_Environments) <br></br>
 
 <p align="center"><img src="assets/ARE_setup_guide/setup_image9.png" alt="drawing" width="50%"/></p>
 <p align="center"><img src="assets/ARE_setup_guide/setup_image10.png" alt="drawing" width="50%"/></p>
 
-- *3.8* Click `Launch` to start your JupyterLab instance.
+- *3.7* Click `Launch` to start your JupyterLab instance.
 
 <p align="center"><img src="assets/ARE_setup_guide/setup_image13.png" alt="drawing" width="50%"/></p>
 
