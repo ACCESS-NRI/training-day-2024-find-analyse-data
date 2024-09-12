@@ -40,7 +40,7 @@ For this training on Intake, you will need to clone a local copy of this repo to
 You can now start a JupyterLab session using the `nf33` project for compute resources and connecting to other projects for dependencies and data. There are instructions below for doing this using <a href="https://are.nci.org.au" target="_blank">ARE</a> but feel free to use your preferred method.
 
 ## Step 0: Pre-requisites
-You should have already joined the following NCI projects: `xp65`, `hh5`, `dk92`, `fs38`, `ik11`, `cj50` and `p73`. If this is not the case, please talk to a helper.
+You should have already joined the following NCI projects: `xp65`, `hh5`, `oi10`, `fs38`, `ik11`, `cj50` and `p73`. If this is not the case, please talk to a helper.
 
 ## Step 1:
 Go to the [ARE](https://are.nci.org.au/) website and log in with your **NCI username and password**.
